@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>放大镜</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{background:#efefef;}
+		#small{
+			width: 350px;
+			height: 350px;
+			border:1px solid #000;
+			position:absolute;
+			left:300px;
+			top:150px;
+		}
+		#small span{
+			width: 160px;
+			height:160px;
+			background: #ff0;;
+			opacity:0.4;
+			position:absolute;
+			left:0;
+			top:0;
+			display: none;
+		}
+		#big{
+			width: 350px;
+			height: 350px;
+			border:1px solid #000;
+			position:absolute;
+			left:700px;
+			top:150px;;
+			overflow:hidden;
+			display: none;
+		}
+		#big img{
+			position: absolute;
+			top:0;
+			left:0;
+		}
+	</style>
+	<script>
+		window.onload=function(){
+			var oSmall=document.getElementById('small');
+			var oBig=document.getElementById('big');
+			var oSpan=oSmall.getElementsByTagName('span')[0];
+			var oImg=oBig.children[0];
+
+			oSmall.onmouseover=function(){
+				oBig.style.display='block';
+				oSpan.style.display='block';
+			};
+			oSmall.onmousemove=function(ev){
+				var oEvent=ev || event;
+
+				var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+				var l=oEvent.clientX-oSpan.offsetWidth/2-oSmall.offsetLeft+scrollTop;
+				var t=oEvent.clientY-oSpan.offsetHeight/2-oSmall.offsetTop+scrollTop;
+
+				if(l<=0)l=0;
+				if(t<=0)t=0;
+				if(l>=oSmall.offsetWidth-oSpan.offsetWidth){
+					l=oSmall.offsetWidth-oSpan.offsetWidth;
+				}
+				if(t>=oSmall.offsetHeight-oSpan.offsetHeight){
+					t=oSmall.offsetHeight-oSpan.offsetHeight;
+				}
+
+				oImg.style.left=-l*(oImg.offsetWidth-oBig.offsetWidth)/(oSmall.offsetWidth-oSpan.offsetWidth)+'px';
+				oImg.style.top=-t*(oImg.offsetHeight-oBig.offsetHeight)/(oSmall.offsetHeight-oSpan.offsetHeight)+'px';
+
+				oSpan.style.left=l+'px';
+				oSpan.style.top=t+'px';
+			};
+			oSmall.onmouseout=function(){
+				oSpan.style.display='none';
+				oBig.style.display='none';
+			}
+		};
+	</script>
+</head>
+<body>
+<div id="box">
+	<div id="small">
+		<img src="images/fd1.jpg">
+		<span></span>
+	</div>
+	<div id="big">
+		<img src="images/fd2.jpg">
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,489 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<style>
+*{font-family:'微软雅黑';}
+.top{height:37px; width:100%;  background:#000; border-top:3px solid #00925f;}
+.top-con{width:1180px; margin:0 auto;	}
+.top-l i{display:block; width:21px; height:16px; background:url(img/icons.png) 0 -882px; margin-top:10px; margin-right:14px;}
+.top-l a:hover i{background:url(img/icons.png) -144px -882px;}
+.top-l b{display:block; width:15px; height:20px; background:url(img/icons.png) -318px -2px; margin-top:10px; }
+.top-l a:hover b{background:url(img/icons.png) -147px -910px;}
+.top-l p{color:#008146; font-weight:bold; height:37px; line-height:37px; margin-left:20px; }
+.top-r{margin-top:10px;}
+.top-r li{float:left;  padding:0 15px; border-right:1px solid #474747;}
+.top-r li a{ display:block; color:#b2b2b2; height:15px; line-height:15px; }
+.top-r li a em{ width:19px; height:16px; background:url(img/icons.png) 0 -1014px; margin-right:8px;}
+.top-r li a:hover{color:#008146;}
+.nav{height:85px;}
+.nav-con{width:1180px; margin:0 auto;	}
+.nav-con .logo{width:168px; height:26px; background:url(img/logo.jpg); margin-top:30px; text-indent:-999em;}
+.nav-r{padding-right:20px;}
+.nav-r li{float:left; margin-left:40px; height:85px; line-height:85px;}
+.nav-r li a{font-weight:bold;}
+a:hover{color:#008146;}
+
+.banner{}
+.banner .hot{position: relative; width:100%; height:630px;}
+
+.hot ul li{display:none;}
+.hot ul .show{display:block;}
+.hot .bg{height:630px; background:url(img/20150202100021_PPLCdk.jpg) top center; border-bottom:1px solid #e1e1e1;  border-top:3px solid #dfdfdf; display:block;}
+.hot .bg1{position: relative; display:block; height:630px; background:url(img/1.jpg)  center; border-bottom:1px solid #e1e1e1;  border-top:3px solid #dfdfdf; }
+.hot .bg2{position: relative; display:block; height:630px; background:url(img/2.jpg)  center; border-bottom:1px solid #e1e1e1;  border-top:3px solid #dfdfdf; }
+.hot .bg3{position: relative; display:block; height:630px; background:url(img/3.jpg)  center; border-bottom:1px solid #e1e1e1;  border-top:3px solid #dfdfdf; }
+.hot .bg4{position: relative; display:block; height:630px; background:url(img/4.jpg)  center; border-bottom:1px solid #e1e1e1;  border-top:3px solid #dfdfdf; }
+
+.banner{background:#f2f2f2; width:100%; }
+.banner .hot span{display:block; width:323px; height:440px; background:url(img/20150202100021_TgEOkp.png) -429px -183px; margin:0 auto; margin-top:170px;}
+.banner .hot .opabox{position:absolute; left:0; bottom:-3px; width:100%; height:70px;}
+.banner .hot .opa{position:absolute; left:0; bottom:0; height:70px; width:100%; background:#CCC; opacity:0.4; filter:alpha(opacity:40);}
+.banner .hot .opabox .btn{ width:140px; margin:27px auto;}
+.banner .hot .opabox .btn a{display:block; position:relative; width:15px; height:15px; background:url(img/icons.png) -257px -929px; float:left; margin-left:13px;}
+
+.banner .hot .opabox .btn .active{display:block; position:relative; width:15px; height:15px; background:url(img/icons.png) -280px -929px; float:left; margin-left:13px;}
+
+
+.phone .title{width:290px; height:80px; background:url(img/icons.png) 0 -708px; margin:40px auto; margin-top:50px;}
+.phone{width:1180px; margin:0 auto;}
+.phone ul{padding-bottom:60px;}
+.phone ul li{width:280px; padding-right:7px;  float:left; margin-right:9px; border-right:1px solid #eaeaea;}
+.phone ul .last{margin-right:0; border-right:0;}
+.phone ul li h1{font-size:18px; font-weight:bold; text-align:center; margin-top:32px; margin-bottom:15px;}
+.phone ul li p{color:#b4b4b4; text-align:center; margin-bottom:15px;}
+.phone ul li span{position:relative; display:block; color:#7db796; text-align:center; padding-bottom:28px; border-bottom:5px solid #dfdfdf;}
+.phone ul li span i{display:block; width:13px; height:13px; background:url(img/icons.png) -177px -1014px; position:absolute; top:0; right:70px;}
+
+.phone ul li div{height:435px; background:#fff; }
+.phone ul li img{box-shadow:0 5px 15px 0; transition:all 1s;}
+.phone ul li img:hover{transform:translate(0,-20px);}
+
+.banner .fittings{width:100%; background:#f6f6f6;padding-top:44px; padding-bottom:48px; border-bottom:1px solid #d9d9d9;}
+.fittings .title{width:290px; height:50px; background:url(img/icons.png) 0 -708px; margin:0 auto; margin-bottom:44px;}
+.fittings .fittings-con{ width:1180px; margin:0 auto;}
+.fittings-con .left-l,.fittings-con .right-l{margin-right:20px;}
+.fittings-con .left-r .left-r-1,.fittings-con .right-r .right-r-1{margin-bottom:20px;}
+.fittings-con .left-l{margin-bottom:20px;  }
+.fittings-con .left-r .left-r-1{width:270px; height:270px; border:5px solid #eaeaea; background:#fff;}
+.fittings-con .left-r .left-r-1 h1{height:58px; line-height:58px; text-align:center; font-weight:bold;}
+.fittings-con .left-r .left-r-1 ul{width:210px; height:120px; border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; margin:0 auto; padding-top:30px;}
+.fittings-con .left-r .left-r-1 ul li{float:left; width:105px; margin-bottom:22px; }
+.fittings-con .left-r .left-r-1 ul li a{position:relative; padding-left:24px; margin-left:10px;}
+
+.fittings-con .left-r .left-r-1 ul .one span{display:block; width:16px; height:16px; background:url(img/icons.png) -135px -356px; position:absolute; top:1px; left:0;}
+.fittings-con .left-r .left-r-1 ul .one:hover span{background:url(img/icons.png) -374px -356px;}
+.fittings-con .left-r .left-r-1 ul .two span{display:block; width:12px; height:17px; background:url(img/icons.png) -250px -356px; position:absolute; top:1px; left:0;}
+.fittings-con .left-r .left-r-1 ul .two:hover span{background:url(img/icons.png) -489px -356px;}
+.fittings-con .left-r .left-r-1 ul .three span{display:block; width:12px; height:18px; background:url(img/icons.png) -137px -394px; position:absolute; top:1px; left:0;}
+.fittings-con .left-r .left-r-1 ul .three:hover span{background:url(img/icons.png) -376px -394px;} 
+.fittings-con .left-r .left-r-1 ul .four span{display:block; width:12px; height:18px; background:url(img/icons.png) -250px -393px; position:absolute; top:1px; left:0;}
+.fittings-con .left-r .left-r-1 ul .four:hover span{background:url(img/icons.png) -489px -393px; }
+.fittings-con .left-r .left-r-1 ul .five span{display:block; width:13px; height:17px; background:url(img/icons.png) -137px -430px; position:absolute; top:1px; left:0;}
+.fittings-con .left-r .left-r-1 ul .five:hover span{ background:url(img/icons.png) -376px -430px;}
+.fittings-con .left-r .left-r-1 ul .six span{display:block; width:14px; height:17px; background:url(img/icons.png) -250px -430px; position:absolute; top:1px; left:0;}
+.fittings-con .left-r .left-r-1 ul .six:hover span{background:url(img/icons.png) -489px -430px;}
+
+.fittings-con .left-r .left-r-1 p{height:60px; line-height:60px; text-align:center;}
+.fittings-con .left-r .left-r-1 p a{position:relative; }
+.fittings-con .left-r .left-r-1 p a span{display:block; width:13px; height:13px; background:url(img/icons.png) -177px -1014px; position:absolute; top:1px; right:-15px;}
+.fittings-con .right-t{margin-left:20px; margin-bottom:20px;}
+.fittings-con .right-l{margin-left:20px;}
+
+.world{padding-bottom:45px;}
+.world .title{width:290px; height:80px; background:url(img/icons.png) 0 -708px; margin:40px auto; margin-top:50px;}
+.world .world-con{width:1180px; margin:0 auto;}	
+.world-con .world-l{width:800px;}
+.world-con .world-l li{float:left; margin:0 20px 20px 0; transition:all 3s;}
+.world-con .world-l li:hover{transform:scale(1.5);  transition:all 3s;}
+.world-con .world-r{width:380px;}
+.world-con .world-r .tit li{float:left; width:190px; height:50px; line-height:50px; text-align:center; background:#dadada;}
+.world-con .world-r .tit li a{font-size:17px;}
+.world-con .world-r .world-r-con{background:#fff; height:465px; padding-top:45px; display:none;}
+.world-con .world-r ul.show{display:block;}
+.world-con .world-r .world-r-con li{width:320px; height:90px; background:#f6f6f6; margin:0 30px 15px 30px;}
+.world-con .world-r .world-r-con li img{float:left}
+.world-con .world-r .world-r-con li p{float:right; width:190px; padding:15px; 0}
+.world-con .world-r .world-r-con li p a{color:#838383; line-height:18px;}
+
+.world-con .world-r .tit .active{background:#fff; border-top:2px solid #00925f; height:48px;}
+
+.footer{height:125px; border-bottom:1px solid #00925f;}
+.footer div,.bottom{width:1180px; margin:0 auto;}
+.footer div a{display:block; width:1180px; height:120px; background:url(img/icons.png) -243px -540px;}
+.bottom{padding-top:30px; margin-bottom:40px;}
+.bottom dl{float:left; width:188px; }
+.bottom dl dt{font-weight:bold; margin-bottom:20px;}
+.bottom dl dd{ position:relative; padding-left:12px; margin-bottom:15px;}
+.bottom dl .change{padding-left:25px;}
+.bottom dl dd a{color:#838383;}
+.bottom dl dd span{display:block; width:3px; height:3px; background:url(img/icons.png) -331px -1018px; position:absolute; left:0; top:4px;}
+.bottom dl dd i{display:block; width:21px; height:16px; background:url(img/icons.png) 0 -882px; position:absolute; left:0; top:0;}
+.bottom dl dd b{display:block; width:15px; height:20px; background:url(img/icons.png) -3px -910px; position:absolute; left:0; top:0;}
+.bottom dl dd strong{display:block; width:18px; height:18px; background:url(img/icons.png) -3px -940px; position:absolute; left:0; top:0;}
+.bottom dl dd em{display:block; width:20px; height:20px; background:url(img/icons.png) 0 -854px; position:absolute; left:0; top:0;}
+
+.bottom dl dd a:hover{color:#409f73;}
+.bottom dl dd:hover i{background:url(img/icons.png) -144px -882px;}
+.bottom dl dd:hover b{ background:url(img/icons.png) -147px -910px;}
+.bottom dl dd:hover strong{background:url(img/icons.png) -147px -940px;}
+.bottom dl dd:hover em{background:url(img/icons.png) -144px -854px;}
+
+.bottom .tel-box h2{font-weight:bold; margin-bottom:30px;}
+.bottom .tel-box .tel{height:45px; margin-bottom:20px;}
+.bottom .tel-box .tel div{margin-left:20px;}
+.bottom .tel-box .tel div h1{font-size:20px; color:#409f73; margin-bottom:12px; line-height:20px;}
+.bottom .tel-box .tel div p{color:#576267; line-height:12px;}
+
+.bottom .tel-box .tel div h1 a{position:relative; font-size:20px; color:#409f73; margin-bottom:12px; line-height:20px; }
+.bottom .tel-box .tel div h1 a span{display:block; width:5px; height:10px; background:url(img/icon3.jpg); position:absolute; top:8px; right:-23px;}
+
+.end{background:#2b2b2b; height:42px; border-top:5px solid #000; padding-top:28px;}
+.end-box{width:1180px; margin:0 auto;}
+.end-box p{color:#828282; margin-left:20px;}
+.end-box ul li{float:left; margin-left:40px; }
+.end-box ul li a{color:#fff;}
+
+.tel img{transition:all 1s;}
+.tel img:hover{transform:rotate(360deg); transition:all 1s;}
+</style>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+$(function(){
+	var oBtn=$('#btn a');
+	var oBg=$('#ul li');
+	oBtn.mouseover(function(){
+		oBtn.removeClass('active');
+		oBg.hide();
+		$(this).addClass('active');
+		$('#ul li').eq($(this).index()).show();
+		$('#ul li').stop().animate({'opacity':'0'},500);
+		$('#ul li').eq($(this).index()).stop().animate({'opacity':'1'},500);
+		});
+	});
+</script>
+</head>
+
+
+<body>
+		<div class="top">
+        		<div class="top-con clearfix">
+                        <div class="top-l fl clearfix">
+                                <a href="###" class="fl"><i></i></a>
+                                <a href="###" class="fl"><b></b></a>
+                                <p class="fl">4001-666-888</p>
+                        </div>
+                        <ul class="top-r fr clearfix">
+                                <li><a href="###">登录</a></li>
+                                <li><a href="###">注册</a></li>
+                                <li><a href="###">积分兑换</a></li>
+                                <li><a href="###">帮助中心</a></li>
+                                <li class="clearfix"><a href="###"><em class="fl"></em><span class="fl">购物车</span></a></li>
+                        </ul>
+                </div>
+        </div>
+        <div class="nav">
+        		<div class="nav-con clearfix">
+                		<a href="###" class="logo fl">oppo</a>
+                        <ul class="nav-r fr clearfix">
+                                <li><a href="###">首页</a></li>
+                                <li><a href="###">手机</a></li>
+                                <li><a href="###">配件</a></li>
+                                <li><a href="###">体验店</a></li>
+                                <li><a href="###">软件商店</a></li>
+                                <li><a href="###">ColorOS</a></li>
+                                <li><a href="###">社区</a></li>
+                        </ul>
+                </div>
+        </div>
+        <div class="banner">
+        		<div class="hot">
+                		<ul id="ul">
+                                <li  class="show"><a href="###" class="bg"><span></span></a></li>
+                                <li ><a href="###" class="bg1" ></a></li>
+                                <li><a href="###" class="bg2" ></a></li>
+                                <li><a href="###" class="bg3" ></a></li>
+                                <li><a href="###" class="bg4" ></a></li>
+                        </ul>
+                        <div class="opabox">
+                        		<div class="opa"></div>
+                                <p class="btn clearfix" id="btn">
+                                		<a  href="###"class="active"></a>
+                                        <a href="###"></a>
+                                        <a href="###"></a>
+                                        <a href="###"></a>
+                                        <a href="###"></a>
+                                </p>
+                        </div>
+                </div>
+         
+                <div class="phone">
+                		<div class="title"></div>
+                		<ul class="clearfix">
+                        		<li>
+                                		<a href="###">
+                                        		<div><img src="img/bg-2-1.jpg" /></div>
+                                                <h1>N3</h1>
+                                                <p>1600万电动旋转摄像头</p>
+                                                <span>￥3999元&nbsp;&nbsp;立即购买<i></i></span>
+                                        </a>
+                                </li>
+                                <li>
+                                		<a href="###">
+                                        		<div><img src="img/bg-2-3.jpg"/></div>
+                                                <h1>N3</h1>
+                                                <p>1600万电动旋转摄像头</p>
+                                                <span>￥3999元&nbsp;&nbsp;立即购买<i></i></span>
+                                        </a>
+                                </li>
+                                <li>
+                                		<a href="###">
+                                        		<div><img src="img/20140319154524jUOVBkgi1v.jpg" /></div>
+                                                <h1>N3</h1>
+                                                <p>1600万电动旋转摄像头</p>
+                                                <span>￥3999元&nbsp;&nbsp;立即购买<i></i></span>
+                                        </a>
+                                </li>
+                                <li class="last">
+                                		<a href="###">
+                                        		<div><img src="img/bg-2-4.jpg" /></div>
+                                                <h1>N3</h1>
+                                                <p>1600万电动旋转摄像头</p>
+                                                <span>￥3999元&nbsp;&nbsp;立即购买<i></i></span>
+                                        </a>
+                                </li>
+                        </ul>
+                </div>
+                <div class="fittings">
+                		<div class="title"></div>
+                        <div class="fittings-con  clearfix">
+                                <div class="fl">
+                                        <div class="clearfix left">
+                                                <div class="fl left-l"><a href="###"><img src="img/bg-3-1.jpg" /></a></div>
+                                                <ul class="fl left-r">
+                                                        <li class="left-r-1">
+                                                        		<h1><a href="###">OPPO手机官网ACCESSORY配件</a></h1>
+                                                                <ul class="clearfix">
+                                                                		<li class="one"><a href="###"><span></span>耳机</a></li>
+                                                                        <li class="two"><a href="###"><span></span>移动电源</a></li>
+                                                                        <li class="three"><a href="###"><span></span>保护壳</a></li>
+                                                                        <li class="four"><a href="###"><span></span>贴膜</a></li>
+                                                                        <li class="five"><a href="###"><span></span>皮套</a></li>
+                                                                        <li class="six"><a href="###"><span></span>数据线</a></li>
+                                                                </ul>
+                                                                <p><a href="###">全部配件<span></span></a></p>
+                                                        </li>
+                                                        <li class="left-r-2"><a href="###"><img src="img/bg-3-2.jpg"></a></li>
+                                                </ul>
+                                        </div>
+                                        <div><a href="###"><img src="img/bg-3-3.jpg" /></a></div>
+                                </div>
+                                <div class="fl right">
+                                         <div class="right-t"><a href="###"><img src="img/bg-3-4.jpg" /></a></div>
+                                         <div class="clearfix">
+                                                <div class="fl right-l"><a href="###"><img src="img/bg-3-5.jpg" /></a></div>
+                                                <ul class="fl right-r">
+                                                        <li class="right-r-1"><a href="###"><img src="img/bg-3-6.jpg"></a></li>
+                                                        <li class="right-r-2"><a href="###"><img src="img/bg-3-7.jpg"></a></li>
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="world">
+                		<div class="title"></div>
+                        <div class="world-con clearfix">
+                        		<ul class="clearfix world-l clearfix fl">
+                                        <li><a href="###"><img src="img/bg-4-1.jpg" /></a></li>
+                                        <li><a href="###"><img src="img/bg-4-2.jpg" /></a></li>
+                                        <li><a href="###"><img src="img/bg-4-3.jpg" /></a></li>
+                                        <li><a href="###"><img src="img/bg-4-4.jpg" /></a></li>
+                      		    </ul>
+                                <script>
+                                $(function(){
+									var oTit=$('.tit li');
+									var oCon=$('.world-r-con');
+									oTit.mouseover(function(){
+										oTit.removeClass('active');
+										oCon.hide();
+										$(this).addClass('active');
+										$('.world-r-con').eq($(this).index()).show();
+										})
+									});
+                                </script>
+                        		<div class="world-r fr">
+                                        <ul class="tit clearfix">
+                                                <li class="active"><a href="###">新闻</a></li>
+                                                <li><a href="###">微博</a></li>
+                                        </ul>
+                                        <ul class="world-r-con show">
+                                                <li class="clearfix">
+                                                        <img src="img/5.jpg" / >
+                                                        <p><a href="###">业界革命，OPPO发布全球最高灵敏度平面振膜耳机PM-1</a></p>
+                                                </li>
+                                                <li class="clearfix">
+                                                        <img src="img/6.jpg" />
+                                                        <p><a href="###">业界革命，OPPO发布全球最高灵敏度平面振膜耳机PM-1</a></p>
+                                                </li>
+                                                <li class="clearfix">
+                                                        <img src="img/7.jpg" />
+                                                        <p><a href="###">业界革命，OPPO发布全球最高灵敏度平面振膜耳机PM-1</a></p>
+                                                </li>
+                                                <li class="clearfix">
+                                                        <img src="img/8.jpg" />
+                                                        <p><a href="###">业界革命，OPPO发布全球最高灵敏度平面振膜耳机PM-1</a></p>
+                                                </li>
+                                        </ul>
+                                        <ul class="world-r-con">
+                                                <li class="clearfix">
+                                                        <img src="img/5.jpg" / >
+                                                        <p><a href="###">业界革命，OPPO发布全球最高灵敏度平面振膜耳机PM-1</a></p>
+                                                </li>
+                                                <li class="clearfix">
+                                                        <img src="img/7.jpg" />
+                                                        <p><a href="###">业界革命，OPPO发布全球最高灵敏度平面振膜耳机PM-1</a></p>
+                                                </li> 
+                                                <li class="clearfix">
+                                                        <img src="img/6.jpg" />
+                                                        <p><a href="###">业界革命，OPPO发布全球最高灵敏度平面振膜耳机PM-1</a></p>
+                                                </li>
+                                                <li class="clearfix">
+                                                        <img src="img/8.jpg" />
+                                                        <p><a href="###">业界革命，OPPO发布全球最高灵敏度平面振膜耳机PM-1</a></p>
+                                                </li>
+                                        </ul>
+                     	   </div>
+                </div>
+        		</div>
+         </div>
+         <div class="footer">
+         		<div>
+                		<a href="###"></a>
+                </div>
+         </div>
+         <div class="bottom clearfix">
+         		<dl>
+                		<dt>关于我们</dt>
+                        <dd>
+                        		<span></span>
+                                <a href="###">关于OPPO</a>
+                        </dd>
+                        <dd>
+                        		<span></span>
+                                <a href="###">新闻中心</a>
+                        </dd>
+                        <dd>
+                        		<span></span>
+                                <a href="###">人才招聘</a>
+                        </dd>
+                </dl>
+                <dl>
+                		<dt>推荐机型</dt>
+                        <dd>
+                        		<span></span>
+                                <a href="###">N3</a>
+                        </dd>
+                        <dd>
+                        		<span></span>
+                                <a href="###">R5</a>
+                        </dd>
+                        <dd>
+                        		<span></span>
+                                <a href="###">R1C</a>
+                        </dd>
+                        <dd>
+                        		<span></span>
+                                <a href="###">Find  7</a>
+                        </dd>
+                </dl>
+                <dl>
+                		<dt>购物相关</dt>
+                        <dd>
+                        		<span></span>
+                                <a href="###">帮助中心</a>
+                        </dd>
+                        <dd>
+                        		<span></span>
+                                <a href="###">周边产品</a>
+                        </dd>
+                        <dd>
+                        		<span></span>
+                                <a href="###">OPPO体验店</a>
+                        </dd>
+                        <dd>
+                        		<span></span>
+                                <a href="###">客户服务政策</a>
+                        </dd>
+                </dl>
+                <dl>
+                		<dt>会员中心</dt>
+                        <dd>
+                        		<span></span>
+                                <a href="###">产品注册</a>
+                        </dd>
+                        <dd>
+                        		<span></span>
+                                <a href="###">会员注册</a>
+                        </dd>
+                        <dd>
+                        		<span></span>
+                                <a href="###">会员登录</a>
+                        </dd>
+                </dl>
+                <dl>
+                		<dt>关注我们</dt>
+                        <dd class="change">
+                        		<i></i>
+                                <a href="###">新浪微博</a>
+                        </dd>
+                        <dd class="change">
+                        		<b></b>
+                                <a href="###">腾讯微博</a>
+                        </dd>
+                        <dd class="change">
+                        		<strong></strong>
+                                <a href="###">人人网</a>
+                        </dd>
+                         <dd class="change">
+                        		<em></em>
+                                <a href="###">QQ空间</a>
+                        </dd>
+                </dl>
+                <div class="fl tel-box ">
+                		<h2>联系我们</h2>
+                		<div class="tel clearfix">
+                        		<img src="img/icon2.jpg"  class="fl"/>
+                                <div class="fl">
+                                		<h1>4001-666-888</h1>
+                                        <p>7*24小时客服热线</p>
+                                </div>
+                        </div>
+                        <div class="tel clearfix">
+                        		<img src="img/icon1.jpg"  class="fl"/>
+                                <div class="fl">
+                                		<h1>
+                                        <a href="###">在线客服<span></span></a>
+                                        </h1>
+                                        <p>服务时段：8：30--22：00</p>
+                                </div>
+                        </div>
+                </div>
+         </div>
+         <div class="end  clearfix">
+         			<div class="end-box">
+                    		<img src="img/logo-2.jpg"  class="fl"/>	
+                            <p class="fl">2005-2015 东莞市永盛通信科技有限公司 版权所有（粤IC备 08130115 号）</p>
+                            <ul class="clearfix fr">
+                                    <li><a href="###">版权说明</a></li>
+                                    <li><a href="###">使用协议</a></li>
+                                    <li><a href="###">网站地图</a></li>
+                                    <li><a href="###">友情链接</a></li>
+                                    <li><a href="###">联系我们</a></li>
+                            </ul>
+                    </div>
+         </div>
+       
+</body>
+</html>

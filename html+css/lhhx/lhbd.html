@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script>
+  // $(function(){
+  //   $('.list li').mouseover(function(){
+  //     $('.list li a').css('borderBottom','0');
+  //     $(this.children[0]).css('borderBottom','3px solid #fbe3b7');
+  //   });
+  // });
+</script>
+
+<script >
+  $(function(){
+    $('#list li').mouseover(function(){
+      $('#list li').removeClass('active-1');
+      $(this).addClass('active-1');
+      $('#con_1 .list-con').hide();
+      $('#con_1 .list-con').eq($(this).index()).show();
+    })
+     $('#ul li').mouseover(function(){
+      $('#ul li').removeClass('active');
+      $('#con a').removeClass('show');
+      $(this).addClass('active');
+      $('#con a').eq($(this).index()).addClass('show');
+    })
+     $('#con_4 li').mouseover(function(){
+      $('#con_4 li').removeClass('active-2');
+      $('#con_3 a').hide();
+      $(this).addClass('active-2');
+      $('#con_3 a').eq($(this).index()).show();
+    })
+     $('#dl dd').mouseover(function(){
+      $("#dl dd").removeClass('active');
+      $('#intro div').hide()
+      $(this).addClass('active');
+      $('#intro div').eq($(this).index()).show();
+     })
+     $('#dl_1 dd').mouseover(function(){
+      $("#dl_1 dd").removeClass('active');
+      $('#intro_1 div').hide()
+      $(this).addClass('active');
+      $('#intro_1 div').eq($(this).index()).show();
+      })
+     $('#dl_2 dd').mouseover(function(){
+      $("#dl_2 dd").removeClass('active');
+      $('#div_2 ul').hide()
+      $(this).addClass('active');
+      $('#div_2 ul').eq($(this).index()).show();
+      })
+  });
+</script>
+<script>
+window.onload=function(){
+  var oBox=document.getElementById('con_32');
+  var oLi_1=oBox.getElementsByTagName('li');
+  var oH2=oBox.getElementsByTagName('h2');
+  var oDiv=oBox.getElementsByTagName('div');
+  for(var i=0; i<oLi_1.length; i++){
+    oLi_1[i].index=i;
+    oLi_1[i].onmouseover=function(){
+      for(var i=0; i<oLi_1.length;i++){
+        oH2[i].className='clearfix show';
+        oDiv[i].className='opabox hide';
+        }
+      oH2[this.index].className='clearfix hide';
+      oDiv[this.index].className='opabox show';
+      }
+    }
+  }
+</script>
+
+</head>
+<body>
+    <div class="box">
+        <div class="title-box">
+            <div class="title clearfix ">
+                <div class="tit-l fl">
+                    <a href="###" class="fl">畅游</a>
+                </div>
+                <div class="clearfix fl tit-c">
+                      <a href="###">
+                          <i></i>
+                          <span>注册</span>
+                      </a>
+                      <a href="###">
+                          <b></b>
+                          <span>充值</span>
+                      </a>
+                      <a href="###">
+                           <em></em>
+                           <span>畅游+</span>
+                      </a>
+                </div>
+                <ul class="fr clearfix tit-r">
+                    <li>
+                      <a href="###" class="clearfix">
+                          <span>客服</span>
+                          <i></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="###" class="clearfix">
+                          <span>畅游全服务</span>
+                          <i></i>
+                      </a>
+                    </li>
+                    <li class="last">
+                      <a href="###" class="clearfix">
+                          <span>畅游全游戏</span>
+                          <i></i>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+         <div class="nav-box">
+            <div class="nav clearfix">
+              <a href="###" class="logo fl"></a>
+              <ul class="list clearfix fr">
+                <li class="list-1"><a href="###"></a></li>
+                <li class="list-2 add-2"> 
+                      <a href="###">
+                          <p><span></span>游戏新闻</p>
+                          <p><span></span>官方公告</p>
+                      </a>
+                </li>
+                <li class="list-2"><a href="###"></a></li>
+                <li class="list-2 add-3">
+                     <a href="###">
+                          <p><span></span>游戏新闻</p>
+                          <p><span></span>官方公告</p>
+                          <p><span></span>游戏新闻</p>
+                          <p><span></span>官方公告</p>
+                      </a>
+                </li>
+                <li class="list-2"><a href="###"></a></li>
+                <li class="list-2 add-1"><a href="###"></a> </li>
+                <li class="list-2 add">
+                   <a href="###">
+                      <p><span></span>游戏新闻</p>
+                      <p><span></span>官方公告</p>
+                  </a>
+                </li>
+                <li class="list-2"><a href="###"></a></li>
+                <li class="list-2 last"><a href="###"></a></li>
+              </ul>
+            </div>
+          </div>
+        <div class="con-box">
+          <div class="con-1 clearfix">
+            <div class="con-1-l fl">
+              <ul class="clearfix ">
+                <li>
+                  <a href="###" class="one"></a>
+                </li>
+                <li>
+                  <a href="###" class="two"></a>
+                </li>
+                <li>
+                  <a href="###" class="three"></a>
+                </li>
+                <li>
+                  <a href="###" class="four"></a>
+                </li>
+                <li>
+                  <a href="###" class="five"></a>
+                </li>
+              </ul>
+              <div>
+                <ul class="clearfix btn" id="ul">
+                  <li class="active"><a href="###"></a></li>
+                  <li><a href="###"></a></li>
+                  <li><a href="###"></a></li>
+                  <li><a href="###"></a></li>
+                  <li><a href="###"></a></li>
+                </ul>
+                <div id="con">
+                  <a href="###" class="show"><img src="img/main_a1 (1).jpg"></a>
+                  <a href="###"><img src="img/main_a1 (2).jpg"></a>
+                  <a href="###"><img src="img/main_a1 (3).jpg"></a>
+                  <a href="###"><img src="img/main_a1 (4).jpg"></a>
+                  <a href="###"><img src="img/main_a1 (5).jpg"></a>
+                </div>
+              </div>
+            </div>
+            <div class="con-1-r fl">
+                <div class="sever">
+                    <p><a href="###">电信一区<span>【元素殿堂】</span>欢迎进驻！</a></p>
+                    <p><a href="###">电信一区<span>【元素殿堂】</span>欢迎进驻！</a></p>
+                </div>
+                <div class="news-list">
+                    <div class="attention clearfix">
+                    <p class="fl"><a href="###">据您上次访问有<span>200</span>条更新<i></i></a></p>
+                    <dl class="fl">
+                        <dt>关注：</dt>
+                        <dd class="att-1"><a href="###"></a></dd>
+                        <dd class="att-2"><a href="###"></a></dd>
+                        <dd class="att-3"><a href="###"></a></dd>
+                    </dl>
+                  </div>
+                  <ul class="con-1-r-list clearfix" id="list">
+                    <li class="active-1"><a href="###">综合</a></li>
+                    <li><a href="###">新闻</a></li>
+                    <li><a href="###">广告</a></li>
+                    <li><a href="###">媒体</a></li>
+                  </ul>
+                  <div id="con_1">
+                      <div class="list-con show">
+                    <h1><a href="###">4月8日大版开启新职业术士魔神天降</a></h1>
+                    <div class="news-con">
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <div ><a href="###" class="fr">更多信息&gt;</a></div>
+                     </div>
+                  </div>
+                  <div class="list-con">
+                    <h1><a href="###">4月8日大版开启新职业术士魔神天降</a></h1>
+                    <div class="news-con">
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】揭秘术士进化史 多张设计稿曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】揭秘术士进化史 多张设计稿曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <div ><a href="###" class="fr">更多信息&gt;</a></div>
+                     </div>
+                  </div>
+                  <div class="list-con">
+                    <h1><a href="###">4月8日大版开启新职业术士魔神天降</a></h1>
+                    <div class="news-con">
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <div ><a href="###" class="fr">更多信息&gt;</a></div>
+                     </div>
+                  </div>
+                  <div class="list-con">
+                    <h1><a href="###">4月8日大版开启新职业术士魔神天降</a></h1>
+                    <div class="news-con">
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】揭秘术士进化史 多张设计稿曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】揭秘术士进化史 多张设计稿曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】两大满级副本特色揭秘 终极BOSS曝光<span>03/24</span></a></p>
+                        <p><a href="###">【新闻】揭秘术士进化史 多张设计稿曝光<span>03/24</span></a></p>
+                        <div ><a href="###" class="fr">更多信息&gt;</a></div>
+                     </div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <ul class="con-2 clearfix">
+              <li><a href="###"><img src="img/main_a2.jpg"></a></li>
+              <li><a href="###"><img src="img/main_a22.jpg"></a></li>
+              <li><a href="###"><img src="img/main_a2 (1).jpg"></a></li>
+              <li class="last"><a href="###"><img src="img/main_a2 (2).jpg"></a></li>
+          </ul>
+          <div class="con-3 clearfix">
+              <div class="con-3-l fl">
+                  <ul id="con_4">
+                    <li  class="active-2"><a href="###" class="shushi"></a></li>
+                    <li ><a href="###"  class="shenshe"></a></li>
+                    <li ><a href="###" class="shouhu" ></a></li>
+                    <li ><a href="###"  class="mofa"></a></li>
+                    <li  ><a href="###" class="zhanshi"></a></li>
+                    <li ><a href="###"  class="cike"></a></li>
+              </ul>
+              <div id="con_3">
+                  <a href="###" class="show"><img src="img/shushi.jpg"></a>
+                  <a href="###"><img src="img/shenshe.jpg"></a>
+                  <a href="###"><img src="img/shouhu.jpg"></a>
+                  <a href="###"><img src="img/mofa.jpg"></a>
+                  <a href="###"><img src="img/zhanshi.jpg"></a>
+                  <a href="###"><img src="img/cike.jpg"></a>
+              </div>
+              </div>
+              <div class="con-3-r fl">
+                  <h1><span></span>活动中心</h1>
+                  <ul id="con_32">
+                      <li>
+                          <h2 class="clearfix hide"><a href="###" class="fl">神谕者的成长礼</a><span class="fr">进行中</span></h2>
+                          <div class="opabox show">
+                                <a href="###"><img src="img/1.jpg" /></a>
+                                <h3></h3>
+                                <p class="clearfix"><a href="###" class="fl">女武神的秘密</a><span class="fr">共7,294,712人关注</span></p>
+                          </div>
+                      </li>
+                     <li>
+                          <h2 class="clearfix show"><a href="###" class="fl">神谕者的成长礼</a><span class="fr">进行中</span></h2>
+                          <div class="opabox hide">
+                                <a href="###"><img src="img/1.jpg" /></a>
+                                <h3></h3>
+                                <p class="clearfix"><a href="###" class="fl">女武神的秘密</a><span class="fr">共7,294,712人关注</span></p>
+                          </div>
+                      </li>
+                      <li>
+                          <h2 class="clearfix show"><a href="###" class="fl">神谕者的成长礼</a><span class="fr">进行中</span></h2>
+                          <div class="opabox hide">
+                                <a href="###"><img src="img/1.jpg" /></a>
+                                <h3></h3>
+                                <p class="clearfix"><a href="###" class="fl">女武神的秘密</a><span class="fr">共7,294,712人关注</span></p>
+                          </div>
+                      </li>
+                      <li>
+                          <h2 class="clearfix show"><a href="###" class="fl">神谕者的成长礼</a><span class="fr">进行中</span></h2>
+                          <div class="opabox hide">
+                                <a href="###"><img src="img/1.jpg" /></a>
+                                <h3></h3>
+                                <p class="clearfix"><a href="###" class="fl">女武神的秘密</a><span class="fr">共7,294,712人关注</span></p>
+                          </div>
+                      </li>
+                      <li>
+                          <h2 class="clearfix show"><a href="###" class="fl">神谕者的成长礼</a><span class="fr">进行中</span></h2>
+                          <div class="opabox hide">
+                                <a href="###"><img src="img/1.jpg" /></a>
+                                <h3></h3>
+                                <p class="clearfix"><a href="###" class="fl">女武神的秘密</a><span class="fr">共7,294,712人关注</span></p>
+                          </div>
+                      </li>
+                      <li>
+                          <h2 class="clearfix show"><a href="###" class="fl">神谕者的成长礼</a><span class="fr">进行中</span></h2>
+                          <div class="opabox hide">
+                                <a href="###"><img src="img/1.jpg" /></a>
+                                <h3></h3>
+                                <p class="clearfix"><a href="###" class="fl">女武神的秘密</a><span class="fr">共7,294,712人关注</span></p>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="con-4 clearfix">
+                <div class="con-4-l fl">
+                    <div class="con-4-l-1">
+                        <h1><a href="###">快捷入口</a></h1>
+                        <ul class="clearfix">
+                            <li><a href="###">·账号管理</a></li>
+                            <li><a href="###">·账号管理</a></li>
+                            <li><a href="###">·账号管理</a></li>
+                            <li><a href="###">·账号管理</a></li>
+                            <li><a href="###">·账号管理</a></li>
+                            <li><a href="###">·账号管理</a></li>
+                            <li><a href="###">·账号管理</a></li>
+                            <li><a href="###">·账号管理</a></li>
+                        </ul>
+                    </div>
+                     <div class="con-4-l-2"><a href="###"><img src="img/main_a3_2.jpg"  id="pic" onclick=" document.getElementById('pic').src='img/main_a3_3.jpg';"/></a></div>
+                     <div class="con-4-l-3">
+                        <div class="c4-31">媒体合作专区</div>
+                        <div class="c4-32">
+                            <a href="###">17173</a>
+                            <a href="###">多玩</a>
+                            <a href="###">太平洋</a>
+                            <a href="###">电玩巴士</a>
+                            <a href="###">新浪</a>
+                            <a href="###">搜狐</a>
+                            <a href="###">百度</a>
+                        </div>
+                     </div>
+                     <div class="con-4-l-4">
+                        <a href="###"></a>
+                     </div>
+                </div>
+                <div class="con-4-c fl">
+                   <div class="con-4-c-1">
+                           <h1><span ></span>玩家交流</h1>
+                          <dl class="clearfix" id="dl">
+                                <dd class="active"><a href="###">17173</a></dd>
+                                <dd><a href="###">新浪爱河</a></dd>
+                                <dd class="last"><a href="###">游戏攻略</a></dd>
+                                <dt><a href="###">更多信息&gt;</a></dt>
+                            </dl>
+                          <div id="intro">
+                                <div class="clearfix intro show">
+                                      <p class="fl"><a href="###"><img src="img/wj.jpg" /></a></p>
+                                      <ul class="fl">
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                      </ul>
+                                </div>
+                                <div class="clearfix intro hide">
+                                      <p class="fl"><a href="###"><img src="img/1031.jpg" /></a></p>
+                                      <ul class="fl">
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                      </ul>
+                                </div>
+                                <div class="clearfix intro hide">
+                                      <p class="fl"><a href="###"><img src="img/wj.jpg" /></a></p>
+                                      <ul class="fl">
+                                            <li><a href="###">·灵魂回响生活技能玩法介绍（一）</a></li>
+                                            <li><a href="###">·灵魂回响生活技能玩法介绍（一）</a></li>
+                                            <li><a href="###">·灵魂回响生活技能玩法介绍（一）</a></li>
+                                            <li><a href="###">·灵魂回响生活技能玩法介绍（一）</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·灵魂回响生活技能玩法介绍（一）</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                      </ul>
+                                </div>
+                          </div>
+                   </div>
+                   <div class="con-4-c-1">
+                           <h1><span class="span-1"></span>媒体专区</h1>
+                          <dl class="clearfix" id="dl_1">
+                                <dd class="active"><a href="###">玩家攻略</a></dd>
+                                <dd><a href="###">玩家攻略</a></dd>
+                                <dd class="last"><a href="###">玩家攻略</a></dd>
+                                <dt><a href="###">更多信息&gt;</a></dt>
+                            </dl>
+                          <div id="intro_1">
+                                <div class="clearfix intro show">
+                                      <p class="fl"><a href="###"><img src="img/1031.jpg" /></a></p>
+                                      <ul class="fl">
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                      </ul>
+                                </div>
+                                <div class="clearfix intro hide">
+                                      <p class="fl"><a href="###"><img src="img/wj.jpg" /></a></p>
+                                      <ul class="fl">
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                      </ul>
+                                </div>
+                                <div class="clearfix intro hide">
+                                      <p class="fl"><a href="###"><img src="img/wj.jpg" /></a></p>
+                                      <ul class="fl">
+                                            <li><a href="###">·灵魂回响生活技能玩法介绍（一）</a></li>
+                                            <li><a href="###">·灵魂回响生活技能玩法介绍（一）</a></li>
+                                            <li><a href="###">·灵魂回响生活技能玩法介绍（一）</a></li>
+                                            <li><a href="###">·灵魂回响生活技能玩法介绍（一）</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                            <li><a href="###">·灵魂回响生活技能玩法介绍（一）</a></li>
+                                            <li><a href="###">·生活技能之烹饪技能详细解读</a></li>
+                                      </ul>
+                                </div>
+                          </div>
+                   </div>
+                </div>
+                <div class="con-4-r fl">
+                      <div class="con-4-r-1">
+                            <h1><span class="span-1"></span>媒体专区</h1>
+                            <dl>
+                                  <dd>
+                                      <p class="fl">新手入门<span></span></p>
+                                      <div>
+                                            <a href="###">注册账号</a><span>|</span>
+                                            <a href="###">注册账号</a><span>|</span>
+                                            <a href="###">注册账号</a>
+                                      </div>
+                                  </dd>
+                                  <dd>
+                                      <p class="fl">新手入门<span></span></p>
+                                      <div>
+                                            <a href="###">注册账号</a><span>|</span>
+                                            <a href="###">注册账号</a><span>|</span>
+                                            <a href="###">注册账号</a>
+                                      </div>
+                                  </dd>
+                                  <dd>
+                                      <p class="fl">新手入门<span></span></p>
+                                      <div>
+                                            <a href="###">注册账号</a><span>|</span>
+                                            <a href="###">注册账号</a><span>|</span>
+                                            <a href="###">注册账号</a>
+                                      </div>
+                                  </dd>
+                                  <dd class="last">
+                                      <p class="fl">新手入门<span></span></p>
+                                      <div>
+                                            <a href="###">注册账号</a><span>|</span>
+                                            <a href="###">注册账号</a><span>|</span>
+                                            <a href="###">注册账号</a>
+                                      </div>
+                                  </dd>
+                                  <dt>
+                                        <a href="###">进入资料站</a>
+                                  </dt>
+                            </dl>
+                      </div>
+                      <div class="con-4-r-2">
+                            <h1><span class="span-2"></span>媒体专区</h1>
+                            <dl class="clearfix" id="dl_2">
+                                <dd class="active"><a href="###">17173</a></dd>
+                                <dd class="last"><a href="###">游戏攻略</a></dd>
+                                <dt><a href="###">更多信息&gt;</a></dt>
+                            </dl>
+                            <div id="div_2">
+                                  <ul class="clearfix show" >
+                                      <li><a href="###"><img src="img/1 (1).jpg" /></a></li>
+                                      <li><a href="###"><img src="img/1 (1).jpg" /></a></li>
+                                      <li><a href="###"><img src="img/1 (1).jpg" /></a></li>
+                                      <li><a href="###"><img src="img/1 (1).jpg" /></a></li>
+                                </ul>
+                                <ul class="clearfix hide" >
+                                      <li><a href="###"><img src="img/1 (2).jpg" /></a></li>
+                                      <li><a href="###"><img src="img/1 (2).jpg" /></a></li>
+                                      <li><a href="###"><img src="img/1 (2).jpg" /></a></li>
+                                      <li><a href="###"><img src="img/1 (2).jpg" /></a></li>
+                                </ul>
+                            </div>
+                      </div>
+                </div>
+          </div >
+          <div class="con-footer">
+                <h1>健康游戏公告</h1>
+                <p>抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+                <p>本游戏适合18周岁以上的成年人用户，未满18周岁的未成年用户请在家长的监督下进行游戏。</p>
+          </div>
+        </div>
+        <div class="footer">
+              <div class="footer-box clearfix">
+                    <p class="p1 fl"></p>
+                    <p class="p2 fl"></p>
+                    <div class="fl">
+                          <p>北京畅游时代数码技术有限公司版权所有COPYRIGHT©2011 CHANGYOU.COM LIMITED.ALL RIGHTS RESERVED.法律声明|联系我们</p>
+                          <p>京网文[2011]0260-093号|京ICP证：070525号</p>
+                    </div>
+              </div>
+        </div>
+        <div class="dianzan"><a href="###"><img src="img/dianzan.png"></a></div>
+    </div>
+</body>
+</html>
+
+
+
+

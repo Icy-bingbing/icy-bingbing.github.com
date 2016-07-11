@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>无限运动</title>
+	<style>
+		html,body{
+			background:#000;
+		}
+		div{
+			width: 150px;
+			height: 150px;
+			position: absolute;
+			left: 100px;
+			top: 100px;
+		}
+		div img{
+			width: 100%;
+			border-radius:50%;
+		}
+	</style>
+	<script src="javascripts/move.js"></script>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script>
+		/* window.onload=function(){
+		 var oDiv=document.getElementById('div1');
+
+		 var arr=[
+		 {left:100, top:100},
+		 {left:200, top:0},
+		 {left:400, top:0},
+		 {left:500, top:100},
+		 {left:500, top:300},
+		 {left:400, top:400},
+		 {left:200, top:400},
+		 {left:100, top:300},
+		 ]
+		 var now=1;
+		 function next(){
+		 move(oDiv, arr[now%arr.length], {complete:function(){
+		 now++;
+		 next();
+		 }})
+		 }
+		 next();
+		 };*/
+		$(function(){
+			var arr=[
+				{left:100, top:100},
+				{left:200, top:0},
+				{left:400, top:0},
+				{left:500, top:100},
+				{left:500, top:300},
+				{left:400, top:400},
+				{left:200, top:400},
+				{left:100, top:300},
+			];
+			var now=1;
+			function next(){
+				$('#div1').stop().animate(arr[now%arr.length],{complete:function(){
+					now++;
+					next();
+				}});
+			};
+			next();
+		});
+	</script>
+</head>
+<body>
+<div id="div1"><img src="images/cat/2.jpg"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

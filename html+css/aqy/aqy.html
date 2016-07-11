@@ -1,0 +1,1575 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<style>
+ .box{width:100%;}
+ .top{position:relative; top:-410px; left:0; width:980px; margin:0 auto;}
+ .box #bg a{width:100%; height:410px; display:none; }
+ .top .nav{ width:980px; height:30px; line-height:30px;position: absolute; top:10px;left:0;}
+ .top .nav .search{ margin-left:300px; width:219px; height:28px; background:none; border:1px solid #a5a39f; padding-left:10px;}
+ .top .nav span input{width:36px; height:30px; background:url(img/icon.jpg); border:0;}
+ .top .nav ul li{float:left; margin-left:10px; }
+ .top .nav ul li a{color:#fff;}
+ .top .nav ul li .icon{position:relative; display:block;  background:url(img/4.png) no-repeat left ; padding-left:17px;margin-right:9px;}
+ .top .nav ul li .icon i{display:block; width:9px; height:9px; background:url(img/3.png); position:absolute; top:0; left:40px;}
+ .top .nav ul li .icon b{display:block; width:10px; height:5px; background: url(img/1.png); position:absolute; top:13px;; right:-12px;} 
+ .top .nav ul li .icon-1 {position:relative; display:block; }
+ .top .nav ul li .icon-2,.top .nav ul li .icon-3{position:relative; display:block; margin-right:9px;}
+ .top .nav ul li .icon-1 i{display:block; width:9px; height:9px; background:url(img/3.png); position:absolute; top:0; left:23px;}
+  .top .nav ul li .icon-2 b,.top .nav ul li .icon-3 b{display:block; width:10px; height:5px; background: url(img/1.png); position:absolute; top:13px; right:-12px;}
+ .top .nav ul li a:hover{color:#699f00;}
+ .top .nav ul li .icon:hover{background:url(img/2.png) no-repeat left ;}
+ a:hover{color:#699f00;}
+ 
+ .top .con{width:232px; height:353px; background:url(img/site-focuslist_bg.png); position:absolute; top:30px; right:-13px; padding-top:18px; padding-left:15px;}
+  .top .con li{height:34px; width:215px; }
+ .top .con a{ height:34px; line-height:34px; margin-left:25px; font-size:14px; color:#fff;}
+ 
+ .top-con{height:98px; background:#000; padding-top:8px;}
+ .top-con .logo-list{width:978px; height:82px; border:1px solid #699f00; border-radius:5px; margin:0 auto; padding-top:6px;}
+ .top-con .logo-list .logo{display:block; width:108px; height:52px; background:url(img/logo.jpg); text-indent:-999em; margin:12px 0 18px 18px;}
+ .top-con .logo-list a{color:#fff;}
+ .top-con .logo-list a:hover{color:#699f00;}
+  .top-con .logo-list .logo-list-1{height:75px; background:url(img/navMenu-line.png) no-repeat right center; }
+  .top-con .logo-list .logo-list-1 li{color:#fff; height:25px; line-height:25px; margin:0 11px 0 22px;}
+  .top-con .logo-list .logo-list-2,.top-con .logo-list .logo-list-5{width:98px; background:url(img/navMenu-line.png) no-repeat right center;  padding-left:17px;}
+  .top-con .logo-list .logo-list-2 li,.top-con .logo-list .logo-list-5 li{ float:left; width:49px; color:#fff; height:25px; line-height:25px;}
+  .top-con .logo-list .logo-list-3,.top-con .logo-list .logo-list-4{width:80px; background:url(img/navMenu-line.png) no-repeat right center;  padding-left:17px;}
+  .top-con .logo-list .logo-list-3 li, .top-con .logo-list .logo-list-4 li{float:left;  color:#fff; height:25px; line-height:25px; margin-right:11px;} 
+  .top-con .logo-list .logo-list-6{width:168px; background:url(img/navMenu-line.png) no-repeat right center;  padding-left:17px;}
+  .top-con .logo-list .logo-list-6 li{float:left; width:84px; color:#fff; height:25px; line-height:25px;}
+  .top-con .logo-list .logo-list-7{width:163px; padding-left:17px;}
+  .top-con .logo-list .logo-list-7 li{ float:left; width:80px; color:#fff; height:25px; line-height:25px;}
+  .top-con .logo-list .logo-list-7 li span{color:#e6b224;}
+  .top-con .logo-list .logo-list-7 li .icon-4,.top-con .logo-list .logo-list-7 li .icon-5{display:block; position:relative;}
+  .top-con .logo-list .logo-list-7 li .icon-4 i{display:block; width:9px; height:9px; background:url(img/3.png); position:absolute; top:0; left:60px;}
+  .top-con .logo-list .logo-list-7 li .icon-5 i{display:block; width:9px; height:9px; background:url(img/3.png); position:absolute; top:0; left:45px;}
+ 
+ .box #bg .bg1{background:url(img/bg0.jpg) center; display:block;}
+ .box #bg .bg2{background:url(img/bg1.jpg) center;}
+ .box #bg .bg3{background:url(img/bg2.jpg) center;}
+ .box #bg .bg4{background:url(img/bg3.jpg) center;}
+ .box #bg .bg5{background:url(img/bg4.jpg) center;}
+ .box #bg .bg6{background:url(img/bg5.jpg) center;}
+ .box #bg .bg7{background:url(img/bg6.jpg) center;}
+ .box #bg .bg8{background:url(img/bg7.jpg) center;}
+ .box #bg .bg9{background:url(img/bg8.jpg) center;}
+ .box #bg .bg10{background:url(img/bg9.jpg) center;}
+ 
+  .active{background:#63b504;}
+  .show{display:block;}
+  .hide{display:none;}
+  
+  .banner{width:980px; margin:0 auto; padding-top:25px;}
+  .banner .news-left{width:380px;}
+  .banner .news-left .news-l-top{height:35px; border-bottom:2px solid #85ba4d;padding-top:5px;}
+  .banner .news-left .news-l-top h1 a{font-size:24px; color:#699f00; }
+  .banner .news-left .news-l-top p{width:45px; height:21px; border:1px solid #e9e9e9; border-radius:10px; padding:4px 10px 0 10px;}
+  .banner .news-left .news-l-top p a{display:block; height:21px; }
+  .banner .news-left .news-l-top p i{display:block; width:15px; height:15px; background:url(img/site-icons-qyIndex.png) -120px -400px;}
+   .banner .news-left .news-l-top p:hover{background:#7bba00;}
+   .banner .news-left .news-l-top p:hover .span{color:#fff;}
+   .banner .news-left .news-l-top p:hover .p-i{background:url(img/site-icons-qyIndex.png) -200px -1160px;}
+   .banner .news-left dl dt{ margin:22px 0 18px 0; text-align:center;}
+   .banner .news-left dl dt a{font-size:18px;}
+   .banner .news-left dl dd a,.banner .news-center ul li a{float:left; margin-right:5px; font-size:16px; height:33px; line-height:17px;}
+   .banner .news-left dl dd span,.banner .news-center ul li span{display:block; width:13px; height:13px; background:url(img/icon-2.jpg); margin-right:3px; margin-top:3px;}
+   .banner .news-left ul li{float:left;}
+   .banner .news-left ul .news-left-1{margin-right:20px;}
+   .banner .news-left ul li p,.banner .news-right dd p{background:#f2f2f2; height:34px; border-bottom:1px solid #ebebeb;}
+   .banner .news-left ul li p a,.banner .news-right dd p a{display:block; height:34px; line-height:34px;  text-align:center;}
+  
+   .banner .news-center{margin:0 20px;} 
+   .banner .news-center .news-center-1{position: relative; display:block; width:380px; height:252px; margin-bottom:25px;}
+   .banner .news-center .news-center-1 .opabox{width:100%; height:40px; position:absolute; left:0; bottom:0;}
+   .banner .news-center .news-center-1 .opabox .opa{position:absolute; left:0; top:0; width:100%; height:40px; background:#000; opacity:0.3; filter:alpha(opacity:30); }
+   .banner .news-center .news-center-1 .opabox p i{width:32px; height:27px; background:url(img/5.png);margin:7px 12px 6px 7px;}
+   .banner .news-center .news-center-1 .opabox p b{font-size:14px; color:#fff; height:40px; line-height:40px; position:relative; z-index:999;}
+   .banner .news-right .news-r-2{margin:15px 0;}
+   
+   .main-1{margin-top:50px;}
+   .main-1-left{width:780px;}
+   .main-1-l-top{height:27px; padding-bottom:10px; border-bottom:2px solid #8ac024; margin-bottom:25px;}
+   .main-1-l-top .main-1-l-title{color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left center; padding-left:20px;}
+    .main-1-l-top .main-1-l-title span{font-weight:normal; margin-left:18px;}
+    .main-1-l-top .main-1-l-top-2{margin-left:34px; padding-top:14px; }
+    .main-1-l-top .main-1-l-top-2 li{float:left; background:url(img/divide-i.png) no-repeat right center; padding-right:22px; margin-right:9px;}
+   .main-1-l-top .main-1-l-top-2 .last{background:none;}
+   .main-1-l-top div a{float:left; }
+   .main-1-l-con .main-1-l-news{width:380px; }
+   .main-1-l-con div .main-1-l-con-1{height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb;padding:10px 0 10px 5px;}
+   .main-1-l-con div .main-1-l-con-1 a{height:12px;}
+   .main-1-l-con div .main-1-l-con-1 h1,.main-1-l-con ul li div h1{margin-bottom:8px;}
+   .main-1-l-con div .main-1-l-con-1 p a,.main-1-l-con ul li div p{color:#999;}
+   .main-1-l-con div .main-1-l-con-1 p a:hover{color:#699f00;}
+    .main-1-l-con ul{width:400px;}
+   .main-1-l-con ul li{width:180px; float:left; margin-left:20px; margin-bottom:15px;}
+   .main-1-l-con ul li div{  height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb; padding:10px 0 9px 5px;}
+   
+    .main-1-right{width:180px;}
+   .main-1-r-top{height:27px; padding-bottom:10px; border-bottom:2px solid #8ac024; margin-bottom:25px;}
+   .main-1-r-top .main-1-r-title{color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left center; padding-left:20px;}
+   .main-1-r-top .main-1-r-1{color:#699f00; margin-top:14px;}
+   .main-1-r-con div{height:223px; background:#f2f2f2; border-bottom:1px solid #ebebeb;}
+   .main-1-r-con div h1{width:170px; height:37px; line-height:37px; text-align:center; border-bottom:1px dotted #ccc; margin-bottom:13px;}
+   .main-1-r-con div p{margin-bottom:21px; margin-left:10px;}
+   .main-1-r-con div p i{float:left; width:6px; height:6px; background:url(img/site-icons-v10-20150512.png) -200px -700px; margin-top:4px; margin-right:6px;}
+   .main-1-r-con div p a{float:left; }
+   
+   .main-2{margin-bottom:22px;}
+   .main-2-top a{position:relative; display:block; font-size:22px; color:#699f00; height:22px; width:100%; padding-bottom:12px; border-bottom:1px solid #e1e1e1; font-weight:bold;}
+   .main-2-top a span{ display:inline-block; background:#ff6d34; color:#fff; width:33px; height:19px; line-height:19px; text-align:center; border-radius:10px 10px 10px 0; margin-right:12px; margin-left:5px;position:absolute; bottom:12px; left:180px; font-weight:normal;}
+   .main-2-top a i{position:absolute; bottom:14px; left:230px; font-weight:normal;}
+   .main-2-con,.main-3-con {margin-top:15px;}
+   .main-2-con li,.main-3-con li{width:180px; float:left; margin-right:20px;}
+   .main-2-con .main-2-con-last,.main-3-con .main-3-con-last{margin:0;}
+   .main-2-con li div,.main-3-con li div{  height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb; padding:10px 0 9px 5px;}
+   .main-2-con li div h1,.main-3-con li div h1{margin-bottom:8px;}
+   .main-2-con li div p,.main-3-con li div p{color:#999;}
+   
+  /* .main-3-top{height:33px; padding-top:22px;}*/
+   .main-3-top a{display:block; width:100%; font-size:22px; color:#699f00;padding-bottom:12px;  font-weight:bold; border-bottom:1px solid #e1e1e1; }
+   .main-3-top a i{font-weight:normal; margin-left:5px;}
+   
+   .main-4{margin:50px 0 40px 0;}
+   .main-5-top{height:45px;border-bottom:2px solid #8ac024; margin-bottom:25px;}
+   .main-5-top .main-5-title{color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left 13px; padding-left:20px; padding-top:10px;}
+    .main-5-top .main-5-title span{font-weight:normal; margin-left:18px;}
+    .main-5-top .main-5-top-2{margin-left:34px; padding-top:24px; }
+    .main-5-top .main-5-top-2 li{float:left; background:url(img/divide-i.png) no-repeat right center; padding-right:22px; margin-right:9px;}
+   .main-5-top .main-5-top-2 .last{background:none;}
+   .main-5-con .main-5-news{width:380px; }
+   .main-5-con div .main-5-con-1{height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb;padding:10px 0 10px 5px;}
+   .main-5-con div .main-5-con-1 a{height:12px;}
+   .main-5-con div .main-5-con-1 h1{margin-bottom:8px;}
+   .main-5-con ul{width:600px;}
+   .main-5-con ul li{width:180px; float:left; margin-left:20px; margin-bottom:15px;}
+   .main-5-con ul li h1{  height:36px; background:#f2f2f2; border-bottom:1px solid #ebebeb; padding:9px 0 8px 5px;line-height:20px;}
+   
+    .main-6-top{height:45px;border-bottom:2px solid #8ac024; margin-bottom:25px;}
+    .main-6-top .main-6-title{color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left 13px; padding-left:20px; padding-top:10px;}
+    .main-6-top .main-6-title span{font-weight:normal; margin-left:18px;}
+    .main-6-top .main-6-top-2{margin-left:34px; padding-top:24px; }
+    .main-6-top .main-6-top-2 li{float:left; background:url(img/divide-i.png) no-repeat right center; padding-right:22px; margin-right:9px;}
+   .main-6-top .main-6-top-2 .last{background:none;}
+   .main-6-con {margin-top:15px;}
+   .main-6-con li{width:180px; float:left; margin-right:20px; margin-bottom:15px;}
+   .main-6-con .main-6-con-last{margin-right:0;}
+   .main-6-con li div{  height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb; padding:10px 0 9px 5px;}
+   .main-6-con li div h1{margin-bottom:8px;}
+   .main-6-con li div p{color:#999;}
+   .main-6-con .main-6-box{width:180px; height:155px; background:#76b300; line-height:155px; text-align:center;}
+   .main-6-con .main-6-box a{color:#fff; font-size:20px;}
+   
+   .main-7{position:relative; width:968px; height:150px; border:1px solid #8ac024;padding:10px 5px 0 5px; margin-top:47px; margin-bottom:48px;}
+   .main-7 a{float:left; margin-right:20px;}
+   .main-7 .main-7-1{margin-right:7px;}
+   .main-7 .main-7-2{margin-right:0;}
+   .main-7 a span{display:block; width:10px; height:18px; background:url(img/site-icons-v10-20150512.png) -100px -40px; margin-top:67px;}
+   .main-7 a i{display:block; width:10px; height:18px; background:url(img/site-icons-v10-20150512.png) -120px -40px; margin-top:67px;}
+   .main-7 div{width:84px; height:22px; background:#8ac024; color:#fff; line-height:22px; text-align:center; position:absolute; left:-1px;; top:-23px; border-radius:5px 5px 0 0 ;}
+   
+   .main-8-top-l{width:780px; height:27px; padding-bottom:10px; border-bottom:2px solid #8ac024; margin-bottom:25px;}
+   .main-8-top-l .main-8-top-l-title{color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left center; padding-left:20px;}
+    .main-8-top-l .main-8-top-l-title span{font-weight:normal; margin-left:18px;}
+	.main-8-top-l .main-8-top-l-2{margin-left:34px; padding-top:14px; }
+    .main-8-top-l .main-8-top-l-2 li{float:left; background:url(img/divide-i.png) no-repeat right center; padding-right:22px; margin-right:9px;}
+   .main-8-top-l .main-8-top-l-2 .last{background:none;}
+   .main-8-top-r{width:180px; height:27px; padding-bottom:10px; border-bottom:2px solid #8ac024; margin-bottom:25px;}
+   .main-8-top-r a {color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left center; padding-left:20px;}
+   .main-8-top-r a span{font-weight:normal; margin-left:18px;}
+   .main-8-con li{width:180px; float:left; margin-right:20px; margin-bottom:14px;}
+   .main-8-con li div{  height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb; padding:10px 0 9px 5px;}
+   .main-8-con li div h1{margin-bottom:8px;}
+   .main-8-con li div p{color:#999;}
+   .main-8-con .main-8-con-list{margin-right:0;}
+   .main-8-con .main-8-con-list ul li{height:20px; margin-bottom:13px; margin-right:0;}
+   .main-8-con .main-8-con-list ul .list-last{margin-bottom:0; }
+   .main-8-con .main-8-con-list ul li i{float:left; width:20px; height:20px; line-height:20px; text-align:center; background:#9c9c9c; color:#fff; border-radius:5px; margin-right:5px;}
+   .main-8-con .main-8-con-list ul li i.color{background:#74b000;}
+   .main-8-con .main-8-con-list ul li span{float:left; height:20px; line-hieght:20px; margin-top:4px; }
+   .main-8-con .main-8-con-list ul li b{float:right; width:7px;; height:2px; background:url(img/site-icons-v10-20150512.png) -34px -772px; margin-top:10px;}
+   .main-8-con .main-8-con-list ul li strong{float:right; width:7px; height:8px; background:url(img/site-icons-v10-20150512.png) 0 -769px; margin-top:7px;}
+   .main-8-con .main-8-con-list ul li em{float:right; width:7px; height:8px; background:url(img/site-icons-v10-20150512.png) -17px -769px; margin-top:7px;}
+   
+   .main-9-top-l,.main-9-top-r{width:580px; height:22px; padding-bottom:10px; border-bottom:1px solid #e1e1e1; margin-bottom:25px; margin-top:8px;}
+   .main-9-top .main-9-top-r{width:380px;}
+   .main-9-top-l .main-9-top-l-title,.main-9-top-r .main-9-top-r-title{color:#699f00; font-size:22px; font-weight:bold;}
+   .main-9-top-l .main-9-top-l-title span,.main-9-top-r .main-9-top-r-title span{font-weight:normal; margin-left:18px;}
+   .main-9-top-l .main-9-top-l-2,.main-9-top-r .main-9-top-r-2{margin-left:34px; padding-top:7px; }
+   .main-9-top-l .main-9-top-l-2 li,.main-9-top-r .main-9-top-r-2 li{float:left; background:url(img/divide-i.png) no-repeat right center; padding-right:22px; margin-right:9px;}
+   .main-9-top-l .main-9-top-l-2 .last,.main-9-top-r .main-9-top-r-2 .last{background:none;}
+   .main-9-con li{float:left; margin-right:20px; width:180px;}
+   .main-9-con .last{margin-right:0;}
+   .main-9-con li p{height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb; padding-left:5px; line-height:34px; margin-bottom:50px;}
+   
+   .main-12-top-l{width:580px; height:27px; padding-bottom:10px; border-bottom:2px solid #8ac024; margin-bottom:25px; margin-right:20px;}
+   .main-12-top-l .main-12-top-l-title{color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left center; padding-left:20px;}
+    .main-12-top-l .main-12-top-l-title span{font-weight:normal; margin-left:18px;}
+	.main-12-top-l .main-12-top-l-2{margin-left:34px; padding-top:14px; }
+    .main-12-top-l .main-12-top-l-2 li{float:left; background:url(img/divide-i.png) no-repeat right center; padding-right:22px; margin-right:9px;}
+   .main-12-top-l .main-12-top-l-2 .last{background:none;}
+   .main-12-top-r,.main-12-top-c{width:180px; height:27px; padding-bottom:10px; border-bottom:2px solid #8ac024; margin-bottom:25px;}
+   .main-12-top-r a,.main-12-top-c a {color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left center; padding-left:20px;}
+   .main-12-top-r a span, .main-12-top-c a span{font-weight:normal; margin-left:18px;}
+   .main-12-con .main-12-con-1 p{width:375px; height:34px; height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb; padding-left:5px; line-height:34px; }
+   .main-12-con ul{width:600px;}
+   .main-12-con ul li{float:left; margin-left:20px; margin-bottom:15px;}
+   .main-12-con ul li h1{height:34px; height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb; padding-left:5px; line-height:34px;}
+   
+   .main-13-top-l,.main-13-top-c,.main-14-top-l,.main-14-top-c{width:380px; height:27px; padding-bottom:10px; border-bottom:2px solid #8ac024;margin:35px 20px 25px 0;}
+   .main-13-top-l .main-13-top-l-title,.main-13-top-c .main-13-top-c-title,.main-14-top-l .main-14-top-l-title,.main-14-top-c .main-14-top-c-title{color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left center; padding-left:20px;}
+    .main-13-top-l .main-13-top-l-title span,.main-13-top-c .main-13-top-c-title span,.main-13-top-r span,.main-14-top-l .main-14-top-l-title span,.main-14-top-c .main-14-top-c-title span,.main-14-top-r span{font-weight:normal; margin-left:18px;}
+	.main-13-top-l .main-13-top-l-2,.main-13-top-c .main-13-top-c-2,.main-14-top-l .main-14-top-l-2,.main-14-top-c .main-14-top-c-2{margin-left:34px; padding-top:14px; }
+    .main-13-top-l .main-13-top-l-2 li,.main-14-top-l .main-14-top-l-2 li,.main-14-top-c .main-14-top-c-2 li{float:left; background:url(img/divide-i.png) no-repeat right center; padding-right:22px; margin-right:9px;}
+	.main-13-top-c .main-13-top-c-2 li{float:left; padding-right:22px; margin-right:9px;}
+   .main-13-top-l .main-13-top-l-2 .last,.main-14-top-l .main-14-top-l-2 .last,.main-14-top-c .main-14-top-c-2 .last{background:none;}
+   .main-13-top-r,.main-14-top-r{width:180px; height:27px; padding-bottom:10px; border-bottom:2px solid #8ac024; margin-bottom:25px; margin-top:35px;}
+   .main-13-top-r a,.main-14-top-r a{color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left center; padding-left:20px;}
+   
+   .main-13-con-1{width:400px;}
+   .main-13-con-1 li{float:left; margin-right:20px; margin-bottom:14px;}
+   .main-13-con-1 li h1,.main-13-con-2 h1,.main-13-con-3 li h1{height:34px; height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb; padding-left:5px; line-height:34px;}
+   .main-13-con-3 li{margin:0 20px 14px 20px;}
+   
+   .main-14-con li{float:left; margin-right:20px; margin-bottom:14px;}
+   .main-14-con .last{margin-right:0;}
+   .main-14-con li h1{height:34px; height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb; padding-left:5px; line-height:34px;}
+   
+   .main-17-top{margin-top:35px;}
+   .main-17-top-l{width:780px; height:27px; padding-bottom:10px; border-bottom:2px solid #8ac024; margin-bottom:25px;}
+   .main-17-top-l .main-17-top-l-title{color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left center; padding-left:20px;}
+    .main-17-top-l .main-17-top-l-title span{font-weight:normal; margin-left:18px;}
+	.main-17-top-l .main-17-top-l-2{margin-left:34px; padding-top:14px; }
+    .main-17-top-l .main-17-top-l-2 li{float:left; background:url(img/divide-i.png) no-repeat right center; padding-right:22px; margin-right:9px;}
+   .main-17-top-l .main-17-top-l-2 .last{background:none;}
+   .main-17-top-r{width:180px; height:27px; padding-bottom:10px; border-bottom:2px solid #8ac024; margin-bottom:25px;}
+   .main-17-top-r a {color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left center; padding-left:20px;}
+   .main-17-top-r a span{font-weight:normal; margin-left:18px;}
+   
+    .main-17-con .main-17-l-news{width:380px; }
+   .main-17-con .main-17-l-news .main-17-l-con-1{height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb;padding:10px 0 10px 5px;}
+   .main-17-con div .main-17-l-con-1 a{height:12px;}
+   .main-17-con div .main-17-l-con-1 h1,.main-17-l-con ul li div h1{margin-bottom:8px;}
+   .main-17-con div .main-17-l-con-1 p a,.main-17-l-con ul li div p{color:#999;}
+   .main-17-con div .main-17-l-con-1 p a:hover{color:#699f00;}
+   .main-17-con ul{width:400px;}
+   .main-17-con ul li{width:180px; float:left; margin-left:20px; margin-bottom:15px;}
+   .main-17-con ul li div{  height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb; padding:10px 0 9px 5px;}
+   .main-17-con ul li p{margin-top:8px;}
+   .main-17-con ul li p a{color:#999; background:url(img/icon-user.png) no-repeat left; padding-left:15px;}   
+   .main-17-con .main-17-con-r{width:170px; height:312px; border-top:1px solid #ebebeb; border-bottom:1px solid #ebebeb; background:#f2f2f2; padding-top:10px; padding-left:10px;}
+   .main-17-con .main-17-con-r .list-con{float:none; height:66px; margin-bottom:12px; margin-left:0;}
+   .main-17-con .main-17-con-r .list-con .pic img{border:1px solid #d8d8d8;}
+   .main-17-con .main-17-con-r .list-con ul{width:95px;}
+   .main-17-con .main-17-con-r .list-con ul li{margin-bottom:8px; margin-left:8px;}
+   .main-17-con .main-17-con-r .list-con ul .list-2 a{color:#999;}
+   .main-17-con .main-17-con-r .list-con ul .list-3{width:68px; height:22px; background:#699f00; line-height:22px; text-align:center; border-radius:5px;}
+   .main-17-con .main-17-con-r .list-con ul .list-3 a{color:#fff;}
+  
+  .main-18-top{margin-top:8px;}
+  .main-18-top-l,.main-18-top-r{width:580px; height:27px; padding-bottom:10px; border-bottom:1px solid #e1e1e1; margin-bottom:25px; margin-top:8px;}
+  .main-18-top .main-18-top-r{width:380px;}
+   .main-18-top-l .main-18-top-l-title,.main-18-top-r .main-18-top-r-title{color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left center; padding-left:20px;}
+    .main-18-top-l .main-18-top-l-title span,.main-18-top-r .main-18-top-r-title span{font-weight:normal; margin-left:18px;}
+	.main-18-top-l .main-18-top-l-2,.main-18-top-r .main-18-top-r-2{margin-left:34px; padding-top:14px; }
+    .main-18-top-l .main-18-top-l-2 li,.main-18-top-r .main-18-top-r-2 li{float:left; background:url(img/divide-i.png) no-repeat right center; padding-right:22px; margin-right:9px;}
+   .main-18-top-l .main-18-top-l-2 .last,.main-18-top-r .main-18-top-r-2 .last{background:none;}
+   
+   .main-19-top{margin-top:8px;}
+  .main-19-top-l,.main-19-top-r{width:580px; height:27px; padding-bottom:10px; border-bottom:1px solid #e1e1e1; margin-bottom:25px; margin-top:8px;}
+  .main-19-top .main-19-top-r{width:380px;}
+   .main-19-top-l .main-19-top-l-title,.main-19-top-r .main-19-top-r-title{color:#699f00; font-size:27px; font-weight:bold; background:url(img/6.png) no-repeat left center; padding-left:20px;}
+    .main-19-top-l .main-19-top-l-title span,.main-19-top-r .main-19-top-r-title span{font-weight:normal; margin-left:18px;}
+	.main-19-top-l .main-19-top-l-2,.main-19-top-r .main-19-top-r-2{margin-left:34px; padding-top:14px; }
+    .main-19-top-l .main-19-top-l-2 li,.main-19-top-r .main-19-top-r-2 li{float:left; background:url(img/divide-i.png) no-repeat right center; padding-right:22px; margin-right:9px;}
+   .main-19-top-l .main-19-top-l-2 .last,.main-19-top-r .main-19-top-r-2 .last{background:none;}
+   .main-19-con li{ float:left; width:180px; float:left; margin-right:20px;}
+   .main-19-con .last{margin:0;}
+   .main-19-con li div{ height:34px; background:#f2f2f2; border-bottom:1px solid #ebebeb; padding:10px 0 9px 5px;}
+   .main-19-con li p{margin-top:8px;}
+   .main-19-con li p a{color:#999; background:url(img/icon-user.png) no-repeat left; padding-left:15px;}
+  
+  .main-20{margin-top:45px; margin-bottom:50px;}
+  .main-20 a{float:left; margin-right:20px; }
+  .main-20 .last{margin:0;}
+  
+  .main-last{margin-top:45px; margin-bottom:50px;}
+  .footer{border-top:1px solid #000;}
+  .footer img{margin:0 auto;}
+</style>
+
+<script>
+ window.onload=function(){
+	 var oCon=document.getElementById('con');
+	 var oBtn=oCon.getElementsByTagName('li');
+	 var oBg=document.getElementById('bg');
+	 var oA=oBg.getElementsByTagName('a');
+	 for(var i=0; i<oBtn.length; i++){
+		 oBtn[i].index=i;
+		 oBtn[i].onmouseover=function(){
+			 for(var i=0; i<oBtn.length; i++){
+				 oBtn[i].className='';
+				 oA[i].style.display='none';
+				 };
+				 this.className='active';
+				 oA[this.index].style.display='block';
+			 };
+		 };
+	 };
+ </script>
+</head>
+
+<body>
+		<div class="box">
+        		<div id="bg">
+                        <a href="###" class="bg1"></a>
+                        <a href="###" class="bg2"></a>
+                        <a href="###" class="bg3"></a>
+                        <a href="###" class="bg4"></a>
+                        <a href="###" class="bg5"></a>
+                        <a href="###" class="bg6"></a>
+                        <a href="###" class="bg7"></a>
+                        <a href="###" class="bg8"></a>
+                        <a href="###" class="bg9"></a>
+                        <a href="###" class="bg10"></a>
+                </div>
+        		<div class="top">
+                         <div class="nav clearfix">
+                                      <input type="text" placeholder="大好时光" class="search fl" />
+                                      <span><input type="button" class="fl"></span>
+                                      <ul class="fr">
+                                                <li><a href="###">登录</a></li>
+                                                <li><a href="###">注册</a></li>
+                                                <li><a href="###">开通VIP</a></li>
+                                                <li>
+                                                		<a href="###" class="icon">
+                                                        		上传
+                                                        		<i></i>
+                                                                <b></b>
+                                                        </a>  
+                                                </li>
+                                                <li>
+                                                        <a href="###" class="icon-1">
+                                                        		下载
+                                                       		 <i></i>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="###" class="icon-2">
+                                                       			 消息
+                                                        		<b></b>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="###" class="icon-3">
+                                                                播放记录
+                                                                <b></b>
+                                                        </a>
+                                                </li>
+                                    </ul>
+                          </div>
+                          <ul class="con" id="con">
+                                <li class="active"><a href="###">奔跑吧，兄弟</a></li>
+                                <li><a href="###">大秧歌</a></li>
+                                <li><a href="###">灵魂摆渡</a></li>
+                                <li><a href="###">奔跑吧，兄弟</a></li>
+                                <li><a href="###">大秧歌</a></li>
+                                <li><a href="###">灵魂摆渡</a></li>
+                                <li><a href="###">奔跑吧，兄弟</a></li>
+                                <li><a href="###">大秧歌</a></li>
+                                <li><a href="###">灵魂摆渡</a></li>
+                                <li><a href="###">爱上超模</a></li>
+               			 </ul>
+                </div>
+                <div class="top-con">
+                         <div class="logo-list clearfix">
+                         		<a href="###" class="logo fl">爱奇艺</a>
+                                <ul class="fl logo-list-1">
+                                		<li><a href="###">娱乐</a></li>
+                                        <li><a href="###">体育</a></li>
+                                        <li><a href="###">资讯</a></li>
+                                </ul>
+                                <ul class="fl logo-list-2 clearfix">
+                                		<li><a href="###">电影</a></li>
+                                        <li><a href="###">电视剧</a></li>
+                                        <li><a href="###">片花</a></li>
+                                        <li><a href="###">综艺</a></li>
+                                        <li><a href="###">微电影</a></li>
+                                        <li><a href="###">脱口秀</a></li>
+                                </ul>
+                                <ul class="fl logo-list-3 clearfix">
+                                		<li><a href="###">动漫</a></li>
+                                        <li><a href="###">生活</a></li>
+                                        <li><a href="###">少儿</a></li>
+                                        <li><a href="###">母婴</a></li>
+                                        <li><a href="###">游戏</a></li>
+                                        <li><a href="###">健康</a></li>
+                                </ul>
+                                <ul class="fl logo-list-4 clearfix">
+                                		<li><a href="###">音乐</a></li>
+                                        <li><a href="###">搞笑</a></li>
+                                        <li><a href="###">时尚</a></li>
+                                        <li><a href="###">原创</a></li>
+                                        <li><a href="###">旅游</a></li>
+                                        <li><a href="###">拍客</a></li>
+                                </ul>
+                                 <ul class="fl logo-list-5 clearfix">
+                                		<li><a href="###">财经</a></li>
+                                        <li><a href="###">军事</a></li>
+                                        <li><a href="###">科技</a></li>
+                                        <li><a href="###">教育</a></li>
+                                        <li><a href="###">汽车</a></li>
+                                        <li><a href="###">纪录片</a></li>
+                                </ul>
+                                <ul class="fl logo-list-6 clearfix">
+                                		<li><a href="###">风云榜</a></li>
+                                        <li><a href="###">公益</a></li>
+                                        <li><a href="###">全网影视</a></li>
+                                        <li><a href="###">直播中心</a></li>
+                                        <li><a href="###">爱奇艺搜索</a></li>
+                                        <li><a href="###">爱奇艺出品</a></li>
+                                </ul>
+                                <ul class="fl logo-list-7 clearfix">
+                                		<li><a href="###">PPS游戏</a></li>
+                                        <li><a href="###">PPS奇秀</a></li>
+                                        <li><a href="###">应用商店</a></li>
+                                        <li><a href="###"><span>VIP</span>会员</a></li>
+                                        <li><a href="###" class="icon-4">爱奇艺商城<i></i></a></li>
+                                        <li><a href="###" class="icon-5">个人中心<i></i></a></li>
+                                </ul>
+                         </div>
+               </div>
+		</div>
+        <div class="banner">
+        		<div class="news clearfix">
+                		<div class="news-left fl">
+                        		<div class="news-l-top clearfix">
+                                        <h1 class="fl"><a href="###">今日焦点<span>&nbsp;更多&gt;</span></a></h1>
+                                        <p class="fr"><a href="###" class="clearfix"><i class="fl p-i"></i><span class="fr span">独播</span></a></p>
+                                </div>
+                                <dl>
+                                		<dt><a href="###">北京市委副书记铝锡文涉严重违纪被查</a></dt>
+                                        <dd class="clearfix">
+                                        		<a href="###"><span></span></a>
+                                                <a href="###">12306推双验证防身份抢注</a>
+                                                <a href="###">埃及金字塔现诡异温差</a>
+                                        </dd>
+                                        <dd  class="clearfix">
+                                        		<a href="###"><span></span></a>
+                                                <a href="###">12306推双验证防身份抢注</a>
+                                                <a href="###"> 埃及金字塔现诡异温差</a>
+                                        </dd>
+                                        <dd  class="clearfix">
+                                        		<a href="###"><span></span></a>
+                                                <a href="###">12306推双验证防身份抢注</a>
+                                                <a href="###"> 埃及金字塔现诡异温差</a>
+                                        </dd>
+                                        <dd  class="clearfix">
+                                        		<a href="###"><span></span></a>
+                                                <a href="###">12306推双验证防身份抢注</a>
+                                                <a href="###"> 埃及金字塔现诡异温差</a>
+                                        </dd>
+                                        <dd  class="clearfix">
+                                        		<a href="###"><span></span></a>
+                                                <a href="###">12306推双验证防身份抢注</a>
+                                                <a href="###"> 埃及金字塔现诡异温差</a>
+                                        </dd>
+                                        <dd  class="clearfix">
+                                        		<a href="###"><span></span></a>
+                                                <a href="###">12306推双验证防身份抢注   </a>
+                                                <a href="###"> 埃及金字塔现诡异温差</a>
+                                        </dd>
+                                </dl>
+                                <ul>
+                                		<li class="news-left-1">
+                                        		<a href="###"><img src="img/2.jpg" /></a>
+                                        		<p><a href="###">任性赛车断两节后如常行驶</a> </p>
+                                        </li>
+                                        <li>
+                                        		<a href="###"><img src="img/2.jpg" /></a>
+                                        		<p><a href="###">任性赛车断两节后如常行驶</a> </p>
+                                        </li>
+                                </ul>
+                        </div>
+                        <div class="news-center fl">
+                        		<div class="">
+                                		<a href="###" class="news-center-1">
+                                        		<img src="img/1 .jpg" />
+                                        		<div class="opabox">
+                                                		<div class="opa"></div>
+                                                        <p class="clearfix"> 
+                                                                <i class="fl"></i>
+                                                                <b class="fl">韩新女团高中庆典表演"掀裙舞"遭民众抨击</b>
+                                                        </p>
+                                                </div>
+                                        </a>
+                                </div>
+                                <ul>
+                                		<li>
+                                        		<a href="###"><span></span></a>
+                                                <a href="###">12306推双验证防身份抢注</a>
+                                                <a href="###">埃及金字塔现诡异温差</a>
+                                        </li>
+                                        <li>
+                                        		<a href="###"><span></span></a>
+                                                <a href="###">12306推双验证防身份抢注</a>
+                                                <a href="###">埃及金字塔现诡异温差</a>
+                                        </li>
+                                        <li>
+                                        		<a href="###"><span></span></a>
+                                                <a href="###">12306推双验证防身份抢注</a>
+                                                <a href="###">埃及金字塔现诡异温差</a>
+                                        </li>
+                                        <li>
+                                        		<a href="###"><span></span></a>
+                                                <a href="###">12306推双验证防身份抢注</a>
+                                                <a href="###">埃及金字塔现诡异温差</a>
+                                        </li>
+                                        <li>
+                                        		<a href="###"><span></span></a>
+                                                <a href="###">12306推双验证防身份抢注</a>
+                                                <a href="###">埃及金字塔现诡异温差</a>
+                                        </li>
+                                </ul>  
+                        </div>
+                        <dl class="fr news-right">
+                                		<dd>
+                                        		<a href="###"><img src="img/2.jpg" /></a>
+                                        		<p><a href="###">任性赛车断两节后如常行驶</a> </p>
+                                        </dd>
+                                        <dd class="news-r-2">
+                                        		<a href="###"><img src="img/2.jpg" /></a>
+                                        		<p><a href="###">任性赛车断两节后如常行驶</a> </p>
+                                        </dd>
+                                        <dd>
+                                        		<a href="###"><img src="img/2.jpg" /></a>
+                                        		<p><a href="###">任性赛车断两节后如常行驶</a> </p>
+                                        </dd>
+                          </dl>
+                </div>
+                <div class="main-1 clearfix">
+                		<div class="main-1-left fl">
+                        		<div class="main-1-l-top">
+                                		<a href="###" class="fl main-1-l-title">综艺<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-1-l-top-2">
+                                        		<li ><a href="###">爱上超模第二季</a></li>
+                                                <li ><a href="###">晓松奇谈</a></li>
+                                                <li ><a href="###">大牌对王牌</a></li>
+                                                <li class="last"><a href="###">流行之王</a></li>
+                                        </ul>
+                                        <div class="fr">
+                                        		<a href="###"><img src="img/01.png" /></a>
+                                                <a href="###"><img src="img/02.png" /></a>
+                                        </div>
+                                </div>
+                                <div class="main-1-l-con clearfix">
+                                		<div class="main-1-l-news fl">
+                                        		<a href="###" ><img src="img/7.jpg" /></a>
+                                                <div class="main-1-l-con-1">
+                                                        <h1><a href="###">非首脑会谈</a></h1>
+                                                        <p><a href="###">各国富二代私生活大揭秘&nbsp;</a><a href="###">意大利天价停车费惊呆众人</a></p>
+                                                </div>
+                                        </div>
+                                        <ul class="clearfix fl">
+                                        		<li>
+                                                		<a href="###" ><img src="img/8.jpg" /></a>
+                                                        <div>
+                                                                <h1><a href="###">流行之王</a></h1>
+                                                                <p>李政军《怯》致敬宋闵浩</p>
+                                                        </div>
+                                                </li>
+                                                <li>
+                                                		<a href="###" ><img src="img/8.jpg" /></a>
+                                                        <div>
+                                                                <h1><a href="###">流行之王</a></h1>
+                                                                <p>李政军《怯》致敬宋闵浩</p>
+                                                        </div>
+                                                </li>
+                                                <li>
+                                                		<a href="###"><img src="img/8.jpg" /></a>
+                                                        <div>
+                                                                <h1><a href="###">流行之王</a></h1>
+                                                                <p>李政军《怯》致敬宋闵浩</p>
+                                                        </div>
+                                                </li>
+                                                <li>
+                                                		<a href="###"><img src="img/8.jpg" /></a>
+                                                        <div>
+                                                                <h1><a href="###">流行之王</a></h1>
+                                                                <p>李政军《怯》致敬宋闵浩</p>
+                                                        </div>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </div>
+                        <div class="main-1-right fr">
+                        		<div class="main-1-r-top">
+                                		<a href="###" class="fl main-1-r-title">精彩推荐</a>
+                                        <a href="###" class="fr main-1-r-1">更多</a>
+                                </div>
+                                <div class="main-1-r-con">
+                                		<a href=""###><img src="img/12.jpg" /></a>
+                                        <div>
+                                        		<h1><a href="###">光棍节恩爱秀多了也会腻</a></h1>
+                                                <p class="clearfix"><i></i><a href="###">乔振宇跳中年迪斯科</a></p>
+                                                <p class="clearfix"><i></i><a href="###">乔振宇跳中年迪斯科</a></p>
+                                                <p class="clearfix"><i></i><a href="###">乔振宇跳中年迪斯科</a></p>
+                                                <p class="clearfix"><i></i><a href="###">乔振宇跳中年迪斯科</a></p>
+                                                <p class="clearfix"><i></i><a href="###">乔振宇跳中年迪斯科</a></p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="main-2">
+                		<div class="main-2-top">
+                        		<a href="###">奔跑吧兄弟第三季<span>独播</span><i>进入专题&gt;</i></a>
+                        </div>
+                        <ul class="main-2-con clearfix">
+                                 <li>
+                                         <a href="###" class="main-2-con-1"><img src="img/11.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">流行之王</a></h1>
+                                                   <p>李政军《怯》致敬宋闵浩</p>
+                                         </div>
+                                 </li>
+                                  <li>
+                                         <a href="###" class="main-2-con-1"><img src="img/11.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">流行之王</a></h1>
+                                                   <p>李政军《怯》致敬宋闵浩</p>
+                                         </div>
+                                 </li>
+                                  <li>
+                                         <a href="###" class="main-2-con-1"><img src="img/11.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">流行之王</a></h1>
+                                                   <p>李政军《怯》致敬宋闵浩</p>
+                                         </div>
+                                 </li>
+                                  <li>
+                                         <a href="###" class="main-2-con-1"><img src="img/11.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">流行之王</a></h1>
+                                                   <p>李政军《怯》致敬宋闵浩</p>
+                                         </div>
+                                 </li>
+                                  <li class="main-2-con-last">
+                                         <a href="###" class="main-2-con-1"><img src="img/11.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">流行之王</a></h1>
+                                                   <p>李政军《怯》致敬宋闵浩</p>
+                                         </div>
+                                 </li>
+                        </ul>
+                </div>
+                <div class="main-3">
+                		<div class="main-3-top">
+                        		<a href="###">脱口秀<i>更多&gt;</i></a>
+                        </div>
+                        <ul class="main-3-con clearfix">
+                                 <li>
+                                         <a href="###"><img src="img/10.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">流行之王</a></h1>
+                                                   <p>李政军《怯》致敬宋闵浩</p>
+                                         </div>
+                                 </li>
+                                  <li>
+                                         <a href="###" ><img src="img/10.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">流行之王</a></h1>
+                                                   <p>李政军《怯》致敬宋闵浩</p>
+                                         </div>
+                                 </li>
+                                  <li>
+                                         <a href="###" ><img src="img/10.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">流行之王</a></h1>
+                                                   <p>李政军《怯》致敬宋闵浩</p>
+                                         </div>
+                                 </li>
+                                  <li>
+                                         <a href="###" ><img src="img/10.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">流行之王</a></h1>
+                                                   <p>李政军《怯》致敬宋闵浩</p>
+                                         </div>
+                                 </li>
+                                  <li class="main-3-con-last">
+                                         <a href="###" ><img src="img/10.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">流行之王</a></h1>
+                                                   <p>李政军《怯》致敬宋闵浩</p>
+                                         </div>
+                                 </li>
+                        </ul>
+                </div>
+                <div class="main-4"><a href="###"><img src="img/13.jpg" /></a></div>
+                <div class="main-5">
+                        <div class="main-5-top">
+                                		<a href="###" class="fl main-5-title">娱乐<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-5-top-2">
+                                        		<li ><a href="###">爱上超模第二季</a></li>
+                                                <li ><a href="###">晓松奇谈</a></li>
+                                                <li ><a href="###">大牌对王牌</a></li>
+                                                <li ><a href="###">爱上超模第二季</a></li>
+                                                <li ><a href="###">晓松奇谈</a></li>
+                                                <li class="last"><a href="###">流行之王</a></li>
+                                        </ul>
+                                        <div class="fr">
+                                        		<a href="###"><img src="img/video-safe.png"/></a>
+                                        </div>
+                         </div>
+                        <div class="main-5-con clearfix">
+                                		<div class="main-5-news fl">
+                                        		<a href="###" ><img src="img/14.jpg" /></a>
+                                                <div class="main-5-con-1">
+                                                        <h1><a href="###">非首脑会谈</a></h1>
+                                                        <p><a href="###">各国富二代私生活大揭秘&nbsp;</a><a href="###">意大利天价停车费惊呆众人</a></p>
+                                                </div>
+                                        </div>
+                                        <ul class="clearfix fl">
+                                        		<li>
+                                                		<a href="###" ><img src="img/15.jpg" /></a>
+                                                        <h1><a href="###">流行之王张檬正牌男友疑似遭曝光 发亲吻照宣誓主权</a></h1>
+                                                </li>
+                                                <li>
+                                                		<a href="###" ><img src="img/15.jpg" /></a>
+                                                       <h1><a href="###">流行之王张檬正牌男友疑似遭曝光 发亲吻照宣誓主权</a></h1>
+                                                </li>
+                                                <li>
+                                                		<a href="###"><img src="img/15.jpg" /></a>
+                                                       <h1><a href="###">流行之王张檬正牌男友疑似遭曝光 发亲吻照宣誓主权</a></h1>
+                                                </li>
+                                                <li>
+                                                		<a href="###"><img src="img/15.jpg" /></a>
+                                                        <h1><a href="###">流行之王张檬正牌男友疑似遭曝光 发亲吻照宣誓主权</a></h1>
+                                                </li>
+                                                <li>
+                                                		<a href="###"><img src="img/15.jpg" /></a>
+                                                        <h1><a href="###">流行之王张檬正牌男友疑似遭曝光 发亲吻照宣誓主权</a></h1>
+                                                </li>
+                                                <li>
+                                                		<a href="###"><img src="img/15.jpg" /></a>
+                                                        <h1><a href="###">流行之王张檬正牌男友疑似遭曝光 发亲吻照宣誓主权</a></h1>
+                                                </li>
+                                        </ul>
+                         </div>
+                </div>
+                <div class="main-6">
+                		<div class="main-6-top">
+                                <a href="###" class="fl main-6-title">猜你喜欢<span>更多&gt;</span></a>
+                                <ul class="fl clearfix main-6-top-2">
+                                        <li ><a href="###">爱上超模第二季</a></li>
+                                        <li ><a href="###">晓松奇谈</a></li>
+                                        <li class="last"><a href="###">流行之王</a></li>
+                                </ul>
+                         </div>
+                          <ul class="main-6-con clearfix">
+                                 <li>
+                                         <a href="###"><img src="img/16.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                         </div>
+                                 </li>
+                                 <li>
+                                         <a href="###"><img src="img/16.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                         </div>
+                                 </li>
+                                  <li>
+                                         <a href="###"><img src="img/16.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                         </div>
+                                 </li>
+                                  <li >
+                                         <a href="###"><img src="img/16.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                         </div>
+                                 </li>
+                                 <li class="main-6-con-last">
+                                         <a href="###"><img src="img/16.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                         </div>
+                                 </li>
+                                 <li>
+                                         <a href="###"><img src="img/16.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                         </div>
+                                 </li>
+                                 <li>
+                                         <a href="###"><img src="img/16.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                         </div>
+                                 </li>
+                                 <li>
+                                         <a href="###"><img src="img/16.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                         </div>
+                                 </li>
+                                 <li>
+                                         <a href="###"><img src="img/16.jpg" /></a>
+                                         <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                         </div>
+                                 </li>
+                                 <li class="main-6-con-last main-6-box">
+                                 		<a href="###">进入个人中心&gt;</a>
+                                 </li>
+                        </ul>
+                </div>
+                <div class="main-7 clearfix">
+                		<div>推广广告</div>
+                		<a href="###" class="main-7-1"><span></span></a>
+                        <a href="###"><img src="img/17.jpg" /></a>
+                        <a href="###"><img src="img/17.jpg" /></a>
+                        <a href="###"><img src="img/17.jpg" /></a>
+                        <a href="###"><img src="img/17.jpg" /></a>
+                        <a href="###" class="main-7-1"><img src="img/17.jpg" /></a>
+                        <a href="###" class="main-7-2"><i></i></a>
+                </div>
+                <div class="main-8">
+                		<div class="main-8-top clearfix">
+                        		<div class="main-8-top-l fl">
+                                		<a href="###" class="fl main-8-top-l-title">电影<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-8-top-l-2">
+                                        		<li ><a href="###">爱奇艺爱电影</a></li>
+                                                <li ><a href="###">网络大电影</a></li>
+                                                <li ><a href="###">VIP会员</a></li>
+                                                <li class="last"><a href="###">爱大片：单身人士N种自嗨指南</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-8-top-r fr">
+                                		<a href="###">电影榜<span>更多&gt;</span></a>
+                                </div>
+                        </div>
+                        <ul class="main-8-con clearfix">
+                        		<li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li class="main-8-con-list">
+                                		<ul>
+                                        		<li>
+                                                		<a href="###" class="clearfix"><i class="color">1</i><span>澳门风云2</span><b></b></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i class="color">2</i><span>道士下山</span><strong></strong></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i class="color">3</i><span>斗地主</span><em></em></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i>4</i><span>山炮进城</span><b></b></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i>5</i><span>我是路人甲</span><b></b></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i>6</i><span>澳门风云2</span><b></b></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i>7</i><span>澳门风云2</span><b></b></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i>8</i><span>澳门风云2</span><b></b></a>
+                                                </li>
+                                                <li class="list-last">
+                                                		<a href="###" class="clearfix"><i>9</i><span>澳门风云2</span><b></b></a>
+                                                </li>
+                                        </ul>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                 <li class="main-8-con-list">
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                        </ul>
+                </div>
+                <div class="mian-9">
+                		<div class="main-9-top clearfix">
+                        		<div class="main-9-top-l fl">
+                                		<a href="###" class="fl main-9-top-l-title">微电影<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-9-top-l-2">
+                                        		<li ><a href="###">第二届深圳国际微电影节</a></li>
+                                                <li class="last"><a href="###">中国梦365个故事</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-9-top-r fr">
+                                		<a href="###" class="fl main-9-top-r-title">片花<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-9-top-r-2">
+                                        		<li ><a href="###">007系列回顾</a></li>
+                                                <li class="last"><a href="###">11月电影观影指南</a></li>
+                                        </ul>
+                                </div>
+                        </div>
+                        <ul class="main-9-con clearfix">
+                                 <li>
+                                         <a href="###"><img src="img/19.jpg" /></a>
+                                         <p><a href="###">爱情宣告预言</a></p>
+                                 </li>
+                                  <li>
+                                         <a href="###"><img src="img/19.jpg" /></a>
+                                         <p><a href="###">史上卡司最豪华短片</a></p>
+                                 </li>
+                                  <li>
+                                         <a href="###"><img src="img/19.jpg" /></a>
+                                         <p><a href="###">史上卡司最豪华短片</a></p>
+                                 </li>
+                                  <li>
+                                         <a href="###"><img src="img/19.jpg" /></a>
+                                         <p><a href="###">史上卡司最豪华短片</a></p>
+                                 </li>
+                                 <li class="last">
+                                         <a href="###"><img src="img/19.jpg" /></a>
+                                         <p><a href="###">史上卡司最豪华短片</a></p>
+                                 </li>
+                        </ul>
+                </div>
+                <div class="main-8">
+                		<div class="main-8-top clearfix">
+                        		<div class="main-8-top-l fl">
+                                		<a href="###" class="fl main-8-top-l-title">电视剧<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-8-top-l-2">
+                                        		<li ><a href="###">内地</a></li>
+                                                <li ><a href="###">韩剧</a></li>
+                                                <li ><a href="###">美剧</a></li>
+                                                 <li ><a href="###">日剧</a></li>>
+                                                <li class="last"><a href="###">自制剧</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-8-top-r fr">
+                                		<a href="###">电视剧榜<span>更多&gt;</span></a>
+                                </div>
+                        </div>
+                        <ul class="main-8-con clearfix">
+                        		<li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li class="main-8-con-list">
+                                		<ul>
+                                        		<li>
+                                                		<a href="###" class="clearfix"><i class="color">1</i><span>澳门风云2</span><b></b></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i class="color">2</i><span>道士下山</span><strong></strong></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i class="color">3</i><span>斗地主</span><em></em></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i>4</i><span>山炮进城</span><b></b></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i>5</i><span>我是路人甲</span><b></b></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i>6</i><span>澳门风云2</span><b></b></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i>7</i><span>澳门风云2</span><b></b></a>
+                                                </li>
+                                                <li>
+                                                		<a href="###" class="clearfix"><i>8</i><span>澳门风云2</span><b></b></a>
+                                                </li>
+                                                <li class="list-last">
+                                                		<a href="###" class="clearfix"><i>9</i><span>澳门风云2</span><b></b></a>
+                                                </li>
+                                        </ul>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                <li>
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                                 <li class="main-8-con-list">
+                                		<a href="###"><img src="img/18.jpg" /></a>
+                                        <div>
+                                                  <h1><a href="###">克拉恋人</a></h1>
+                                                   <p>唐嫣丑女变身追爱rain</p>
+                                        </div>
+                                </li>
+                        </ul>
+                </div>
+                <div class="main-7 clearfix">
+                		<div>推广广告</div>
+                		<a href="###" class="main-7-1"><span></span></a>
+                        <a href="###"><img src="img/20.jpg" /></a>
+                        <a href="###"><img src="img/20.jpg" /></a>
+                        <a href="###"><img src="img/20.jpg" /></a>
+                        <a href="###"><img src="img/20.jpg" /></a>
+                        <a href="###" class="main-7-1"><img src="img/20.jpg" /></a>
+                        <a href="###" class="main-7-2"><i></i></a>
+                </div>
+                <div class="main-12">
+                		<div class="main-12-top clearfix">
+                        		<div class="main-12-top-l fl">
+                                		<a href="###" class="fl main-12-top-l-title">动漫<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-12-top-l-2">
+                                        		<li ><a href="###">真人特摄</a></li>
+                                                <li class="last"><a href="###">动画电影</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-12-top-c fl">
+                                		<a href="###" class="fl main-9-top-r-title">少儿<span>更多&gt;</span></a>  
+                                </div>
+                                <div class="main-12-top-r fr">
+                                		<a href="###" class="fl main-9-top-r-title">教育<span>更多&gt;</span></a>  
+                                </div>
+                        </div>
+                        <div class="main-12-con  clearfix">
+                        		<div class="main-12-con-1 fl">
+                                        		<a href="###" ><img src="img/21.jpg" /></a>
+                                                <p><a href="###">航海王</a></p>
+                                        </div>
+                                        <ul class="clearfix fr">
+                                        		<li>
+                                                		<a href="###" ><img src="img/22.jpg" /></a>
+                                                        <h1><a href="###">小巴林</a></h1>
+                                                </li>
+                                                <li>
+                                                		<a href="###" ><img src="img/22.jpg" /></a>
+                                                       <h1><a href="###">小花仙 第二季</a></h1>
+                                                </li>
+                                                <li class="last">
+                                                		<a href="###"><img src="img/22.jpg" /></a>
+                                                       <h1><a href="###">大头儿子小头爸爸</a></h1>
+                                                </li>
+                                                <li>
+                                                		<a href="###"><img src="img/22.jpg" /></a>
+                                                        <h1><a href="###">小花仙 第二季</a></h1>
+                                                </li>
+                                                <li>
+                                                		<a href="###"><img src="img/22.jpg" /></a>
+                                                        <h1><a href="###">小花仙 第二季</a></h1>
+                                                </li>
+                                                <li class="last">
+                                                		<a href="###"><img src="img/22.jpg" /></a>
+                                                        <h1><a href="###">小花仙 第二季</a></h1>
+                                                </li>
+                                        </ul>
+                        </div>
+                </div>
+                <div class="main-13">
+                		<div class="main-13-top clearfix">
+                        		<div class="main-13-top-l fl">
+                                		<a href="###" class="fl main-13-top-l-title">体育<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-13-top-l-2">
+                                        		<li ><a href="###">足球</a></li>
+                                                <li ><a href="###">美网</a></li>
+                                                <li class="last"><a href="###">篮球</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-13-top-c fl">
+                                		<a href="###" class="fl main-13-top-c-title">音乐<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-13-top-c-2">
+                                        		<li ><a href="###">爱奇艺音乐榜</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-13-top-r fr">
+                                		<a href="###" class="fl main-13-top-r-title">时尚<span>更多&gt;</span></a>  
+                                </div>
+                        </div>
+                        <div class="main-13-con clearfix">
+                        		<ul class="fl clearfix main-13-con-1 ">
+                                		<li>
+                                        		<a href="###" ><img src="img/23.jpg" /></a>
+                                                <h1><a href="###">北京申冬奥承诺清洁空气</a></h1>
+                                        </li>
+                                        <li class="last">
+                                        		<a href="###" ><img src="img/23.jpg" /></a>
+                                                <h1><a href="###">北京申冬奥承诺清洁空气</a></h1>
+                                        </li>
+                                        <li>
+                                        		<a href="###" ><img src="img/23.jpg" /></a>
+                                                <h1><a href="###">北京申冬奥承诺清洁空气</a></h1>
+                                        </li>
+                                        <li class="last">
+                                        		<a href="###" ><img src="img/23.jpg" /></a>
+                                                <h1><a href="###">北京申冬奥承诺清洁空气</a></h1>
+                                        </li>
+                                </ul>
+                                <div class="main-13-con-2 fl">
+                                		<a href="###" ><img src="img/24.jpg" /></a>
+                                        <h1><a href="###">王菲-清平调</a></h1>
+                                </div>
+                                <ul class="main-13-con-3 fl">
+                                		<li class="last">
+                                        		<a href="###" ><img src="img/25.jpg" /></a>
+                                                <h1><a href="###">东方神起-Rise As One</a></h1>
+                                        </li>
+                                        <li class="last">
+                                        		<a href="###" ><img src="img/25.jpg" /></a>
+                                                <h1><a href="###">东方神起-Rise As One</a></h1>
+                                        </li>
+                                </ul>
+                                <div class="main-13-con-2 fl">
+                                		<a href="###" ><img src="img/24.jpg" /></a>
+                                        <h1><a href="###">王菲-清平调</a></h1>
+                                </div>
+                        </div>
+                </div>
+                <div class="main-14">
+                		<div class="main-14-top clearfix">
+                        		<div class="main-14-top-l fl">
+                                		<a href="###" class="fl main-14-top-l-title">母婴<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-14-top-l-2">
+                                        		<li ><a href="###">足球</a></li>
+                                                <li ><a href="###">美网</a></li>
+                                                <li class="last"><a href="###">篮球</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-14-top-c fl">
+                                		<a href="###" class="fl main-14-top-c-title">生活<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-14-top-c-2">
+                                        		<li ><a href="###">爱奇艺音乐榜</a></li>
+                                                <li ><a href="###">美网</a></li>
+                                                <li class="last"><a href="###">篮球</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-14-top-r fr">
+                                		<a href="###" class="fl main-13-top-r-title">健康<span>更多&gt;</span></a>  
+                                </div>
+                        </div>
+                        <ul class="main-14-con  clearfix">
+                        		<li>
+                                        <a href="###" ><img src="img/26.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                                <li >
+                                        <a href="###" ><img src="img/29.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                                <li >
+                                        <a href="###" ><img src="img/27.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                                <li>
+                                        <a href="###" ><img src="img/27.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                                <li class="last">
+                                        <a href="###" ><img src="img/28.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                        </ul>
+                </div>
+                <div class="main-14">
+                		<div class="main-14-top clearfix">
+                        		<div class="main-14-top-l fl">
+                                		<a href="###" class="fl main-14-top-l-title">科技<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-14-top-l-2">
+                                        		<li ><a href="###">足球</a></li>
+                                                <li ><a href="###">美网</a></li>
+                                                <li class="last"><a href="###">篮球</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-14-top-c fl">
+                                		<a href="###" class="fl main-14-top-c-title">汽车<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-14-top-c-2">
+                                        		<li ><a href="###">爱奇艺音乐榜</a></li>
+                                                <li ><a href="###">美网</a></li>
+                                                <li class="last"><a href="###">篮球</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-14-top-r fr">
+                                		<a href="###" class="fl main-13-top-r-title">财经<span>更多&gt;</span></a>  
+                                </div>
+                        </div>
+                        <ul class="main-14-con  clearfix">
+                        		<li>
+                                        <a href="###" ><img src="img/30.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                                <li >
+                                        <a href="###" ><img src="img/30.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                                <li >
+                                        <a href="###" ><img src="img/31.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                                <li>
+                                        <a href="###" ><img src="img/31.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                                <li class="last">
+                                        <a href="###" ><img src="img/32.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                        </ul>
+                </div>
+                <div class="main-14">
+                		<div class="main-14-top clearfix">
+                        		<div class="main-14-top-l fl">
+                                		<a href="###" class="fl main-14-top-l-title">旅游<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-14-top-l-2">
+                                        		<li ><a href="###">足球</a></li>
+                                                <li ><a href="###">美网</a></li>
+                                                <li class="last"><a href="###">篮球</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-14-top-c fl">
+                                		<a href="###" class="fl main-14-top-c-title">纪录片<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-14-top-c-2">
+                                        		<li ><a href="###">VIP精选</a></li>
+                                                <li ><a href="###">美网</a></li>
+                                                <li class="last"><a href="###">篮球</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-14-top-r fr">
+                                		<a href="###" class="fl main-13-top-r-title">军事<span>更多&gt;</span></a>  
+                                </div>
+                        </div>
+                        <ul class="main-14-con  clearfix">
+                        		<li>
+                                        <a href="###" ><img src="img/33.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                                <li >
+                                        <a href="###" ><img src="img/34.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                                <li >
+                                        <a href="###" ><img src="img/33.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                                <li>
+                                        <a href="###" ><img src="img/34.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                                <li class="last">
+                                        <a href="###" ><img src="img/33.jpg" /></a>
+                                        <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                </li>
+                        </ul>
+                </div>
+                <div class="main-17">
+                		<div class="main-17-top clearfix">
+                        		<div class="main-17-top-l fl">
+                                		<a href="###" class="fl main-17-top-l-title">原创<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-17-top-l-2">
+                                        		<li ><a href="###">爱奇艺爱电影</a></li>
+                                                <li ><a href="###">网络大电影</a></li>
+                                                <li ><a href="###">VIP会员</a></li>
+                                                <li class="last"><a href="###">爱大片：单身人士N种自嗨指南</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-17-top-r fr">
+                                		<a href="###">原创达人<span>更多&gt;</span></a>
+                                </div>
+                        </div>
+                        <div class="main-17-con clearfix">
+                        		<div class="main-17-l-news fl">
+                                        		<a href="###" ><img src="img/7.jpg" /></a>
+                                                <div class="main-17-l-con-1">
+                                                        <h1><a href="###">非首脑会谈</a></h1>
+                                                        <p><a href="###">各国富二代私生活大揭秘&nbsp;</a><a href="###">意大利天价停车费惊呆众人</a></p>
+                                                </div>
+                                        </div>
+                                <ul class="clearfix fl">
+                                        		<li>
+                                                		<a href="###" ><img src="img/8.jpg" /></a>
+                                                        <div>
+                                                                <h1><a href="###">女人如衣服 那男人呢?</a></h1>
+                                                                <p><a href="###">极品世界</a></p>
+                                                        </div>
+                                                </li>
+                                                <li>
+                                                		<a href="###" ><img src="img/8.jpg" /></a>
+                                                        <div>
+                                                                <h1><a href="###">女人如衣服 那男人呢?</a></h1>
+                                                                 <p><a href="###">极品世界</a></p>
+                                                        </div>
+                                                </li>
+                                                <li>
+                                                		<a href="###"><img src="img/8.jpg" /></a>
+                                                        <div>
+                                                                <h1><a href="###">女人如衣服 那男人呢?</a></h1>
+                                                                <p><a href="###">极品世界</a></p>
+                                                        </div>
+                                                </li>
+                                                <li>
+                                                		<a href="###"><img src="img/8.jpg" /></a>
+                                                        <div>
+                                                                <h1><a href="###">女人如衣服 那男人呢?</a></h1>
+                                                                <p><a href="###">极品世界</a></p>
+                                                        </div>
+                                                </li>
+                                        </ul>
+                                 <div class="main-17-con-r fr">
+                                 		<ul class="list">
+                                        		<li class="list-con clearfix">
+                                                		<a href="###" class="pic fl"><img src="img/35.jpg"  /></a>
+                                                        <ul class="fl">
+                                                        		<li class="list-1"><a href="###">明白学堂官方</a></li>
+                                                                <li class="list-2"><a href="###">7047人订阅</a></li>
+                                                                <li class="list-3"><a href="###">+订阅</a></li>
+                                                        </ul>
+                                                </li>
+                                                <li class="list-con clearfix">
+                                                		<a href="###" class="pic fl"><img src="img/35.jpg"  /></a>
+                                                        <ul class="fl">
+                                                        		<li class="list-1"><a href="###">明白学堂官方</a></li>
+                                                                <li class="list-2"><a href="###">7047人订阅</a></li>
+                                                                <li class="list-3"><a href="###">+订阅</a></li>
+                                                        </ul>
+                                                </li>
+                                                <li class="list-con clearfix">
+                                                		<a href="###" class="pic fl"><img src="img/35.jpg"  /></a>
+                                                        <ul class="fl">
+                                                        		<li class="list-1"><a href="###">明白学堂官方</a></li>
+                                                                <li class="list-2"><a href="###">7047人订阅</a></li>
+                                                                <li class="list-3"><a href="###">+订阅</a></li>
+                                                        </ul>
+                                                </li>
+                                                <li class="list-con clearfix">
+                                                		<a href="###" class="pic fl"><img src="img/35.jpg"  /></a>
+                                                        <ul class="fl">
+                                                        		<li class="list-1"><a href="###">明白学堂官方</a></li>
+                                                                <li class="list-2"><a href="###">7047人订阅</a></li>
+                                                                <li class="list-3"><a href="###">+订阅</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                 </div>
+                        </div>
+                </div>
+                <div class="main-18">
+                		<div class="main-18-top clearfix">
+                        		<div class="main-18-top-l fl">
+                                		<a href="###" class="fl main-18-top-l-title">搞笑<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-18-top-l-2">
+                                        		<li ><a href="###">爱奇艺爱电影</a></li>
+                                                <li ><a href="###">VIP会员</a></li>
+                                                <li class="last"><a href="###">爱大片：单身人士N种自嗨指南</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-18-top-r fr">
+                                		<a href="###" class="fl main-18-top-r-title">拍客<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-18-top-r-2">
+                                        		<li ><a href="###">爱奇艺</a></li>
+                                                <li class="last"><a href="###">单身人士</a></li>
+                                        </ul>
+                                </div>
+                                <ul class="main-14-con  clearfix">
+                                        <li>
+                                                <a href="###" ><img src="img/33.jpg" /></a>
+                                                <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                        </li>
+                                        <li >
+                                                <a href="###" ><img src="img/34.jpg" /></a>
+                                                <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                        </li>
+                                        <li >
+                                                <a href="###" ><img src="img/33.jpg" /></a>
+                                                <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                        </li>
+                                        <li>
+                                                <a href="###" ><img src="img/34.jpg" /></a>
+                                                <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                        </li>
+                                        <li class="last">
+                                                <a href="###" ><img src="img/33.jpg" /></a>
+                                                <h1><a href="###">超萌萝莉神模仿金星</a></h1>
+                                        </li>
+                        </ul>
+                        </div>
+                </div>
+                <div class="main-19">
+                		<div class="main-19-top clearfix">
+                        		<div class="main-19-top-l fl">
+                                		<a href="###" class="fl main-19-top-l-title">游戏<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-19-top-l-2">
+                                        		<li ><a href="###">爱奇艺爱电影</a></li>
+                                                <li ><a href="###">VIP会员</a></li>
+                                                <li class="last"><a href="###">爱大片：单身人士N种自嗨指南</a></li>
+                                        </ul>
+                                </div>
+                                <div class="main-19-top-r fr">
+                                		<a href="###" class="fl main-19-top-r-title">PPS奇秀<span>更多&gt;</span></a>
+                                        <ul class="fl clearfix main-19-top-r-2">
+                                        		<li ><a href="###">爱奇艺</a></li>
+                                                <li class="last"><a href="###">单身人士</a></li>
+                                        </ul>
+                                </div>
+                        </div>
+                          <ul class="main-19-con  clearfix">
+                           		<li>
+                                 		<a href="###"><img src="img/8.jpg" /></a>
+                                         <div>
+                                               <h1><a href="###">女人如衣服 那男人呢?</a></h1>
+                                                <p><a href="###">极品世界</a></p>
+                                        </div>
+                              </li>
+                              <li>
+                                 		<a href="###"><img src="img/8.jpg" /></a>
+                                         <div>
+                                               <h1><a href="###">女人如衣服 那男人呢?</a></h1>
+                                                <p><a href="###">极品世界</a></p>
+                                        </div>
+                              </li>
+                              <li>
+                                 		<a href="###"><img src="img/8.jpg" /></a>
+                                         <div>
+                                               <h1><a href="###">女人如衣服 那男人呢?</a></h1>
+                                                <p><a href="###">极品世界</a></p>
+                                        </div>
+                              </li>
+                              <li>
+                                 		<a href="###"><img src="img/8.jpg" /></a>
+                                         <div>
+                                               <h1><a href="###">女人如衣服 那男人呢?</a></h1>
+                                                <p><a href="###">极品世界</a></p>
+                                        </div>
+                              </li>
+                              <li class="last">
+                                 		<a href="###"><img src="img/8.jpg" /></a>
+                                         <div>
+                                               <h1><a href="###">女人如衣服 那男人呢?</a></h1>
+                                                <p><a href="###">极品世界</a></p>
+                                        </div>
+                              </li>      
+                        </ul>
+                </div>
+                <div class="main-20 clearfix">
+                		<a href="###"><img src="img/37.jpg" /></a>
+                        <a href="###"><img src="img/37.jpg" /></a>
+                        <a href="###"><img src="img/37.jpg" /></a>
+                        <a href="###"><img src="img/37.jpg" /></a>
+                        <a href="###" class="last"><img src="img/37.jpg" /></a>
+                </div>
+                <div>
+                		<a href="###"><img src="img/38.jpg" /></a>
+                </div>
+                <div class="main-last">
+                		<img src="img/39.jpg" />
+                </div>
+        </div>
+        <div class="footer">
+        		<img src="img/40.jpg" />
+        </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#box{
+			width: 700px;
+			height: 400px;
+			background:url(images/img/0.jpg);
+			margin:100px auto;
+			position:relative;
+		}
+		#box span{
+			background: url(images/img/1.jpg);
+			position: absolute;
+			opacity:0;
+		}
+		#t1{
+			position: absolute;
+			left: 50%;
+			top: 10px;;
+		}
+	</style>
+	<script src="javascripts/move.js"></script>
+	<script>
+		window.onload=function(){
+			var oBox=document.getElementById('box');
+			var oBtn=document.getElementById('t1');
+			var R=4;
+			var C=7;
+			for(var r=0; r<R; r++){
+				for(var c=0; c<C; c++){
+					var oSpan=document.createElement('span');
+					oSpan.style.width=oBox.offsetWidth/C+'px';
+					oSpan.style.height=oBox.offsetHeight/R+'px';
+					oBox.appendChild(oSpan);
+					oSpan.style.left=c*oSpan.offsetWidth+'px';
+					oSpan.style.top=r*oSpan.offsetHeight+'px';
+					oSpan.style.backgroundPosition='-'+c*oSpan.offsetWidth+'px -'+r*oSpan.offsetHeight+'px';
+					oSpan.r=r;
+					oSpan.c=c;
+				}
+			}
+			var timer;
+			var iNow=0;
+			var bFlag=false;
+			oBtn.onclick=function(){
+				if(bFlag)return;
+				bFlag=true;
+				var aSpan=document.getElementsByTagName('span');
+				iNow++;
+				if(iNow%3==0){
+					oBox.style.backgroundImage='url(images/img/2.jpg)';
+				}else{
+					oBox.style.backgroundImage='url(images/img/'+(iNow%3-1)+'.jpg)'
+				}
+				for(var i=0; i<aSpan.length; i++){
+					(function(index){
+						setTimeout(function(){
+							aSpan[index].style.opacity=0;
+							aSpan[index].style.backgroundImage='url(images/img/'+iNow%3+'.jpg)';
+							move(aSpan[index], {opacity: 1});
+							index++;
+							if(index==aSpan.length){
+								clearInterval(timer);
+								bFlag=false;
+							}
+						}, 100*(aSpan[index].r+aSpan[index].c));
+					})(i);
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+<input type="button" value="换一张" id="t1">
+<div id="box"></div>
+</body>
+</html>

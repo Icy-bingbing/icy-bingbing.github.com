@@ -1,0 +1,1401 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet">
+<style>
+*{font-family:'Arial'; color:#666;}
+.top{background:#f5f5f5; height:40px; width:100%; border-bottom:1px solid #eee;}
+.top-inner{width:1200px; margin:0 auto;}
+.top-inner li{border-right:1px dotted #cbcbcb; margin-top:11px;}
+.top-inner li a{color:#666; height:18px; line-height:18px; margin-left:16px; margin-right:15px;}
+.one{background:url(img/i_wx_single.png) no-repeat; padding-left:19px;}
+a span{padding-left:19px;}
+.two{width:16px; height:16px; background: url(img/mls_global140607.png)  no-repeat -187px -21px; }
+.three{width:19px; height:16px; background: url(img/mls_global140607.png)  no-repeat 0 -163px;}
+.four{width:13px; height:15px; background: url(img/mls_global140607.png)  no-repeat -223px -45px;}
+.five{width:10px; height:16px; background: url(img/mls_global140607.png)  no-repeat -171px -45px;}
+a i{color:#fff; background:#999; padding:0 7px 0 7px; border-radius:6px; margin-left:7px;}
+.top-inner .six{border:0;}
+
+.header{width:1200px; margin:0 auto; height:36px; padding:15px 0; position:relative;}
+.header a{display:block; width:106px; height:36px; background:url(img/logo_n4.png) no-repeat; text-indent:-999em;}
+.search{width:460px; height:30px; border:2px solid #ff6699; position:absolute; left:360px; top:17px;}
+.search em{width:14px; height:14px; background:url(img/mls_global140607.png) no-repeat 0 -69px;  margin:8px 4px 8px 8px;}
+.search select{width:68px; height:30px; background:#f5f5f5; line-height: 28px; border: 1px solid #f5f5f5; border-right-color: #e6e6e6; color:#666666; padding-left:16px;}
+.search span{width:300px; height:30px; }
+.search span .tex{ border: 0;height: 24px; line-height: 24px; color: #999; width: 265px; outline:none; margin-top: 3px;}
+.btn{width:90px; height:30px; background: #f69; border: 0; color: #fff; font-size: 14px; cursor: pointer;}
+
+.main-top{height:40px; background:#ff6599; width:100%;}
+.main-top ul{width:950px; margin:0 auto; }
+.main-top li{float:left;}
+.main-top li a{color:#fff; font-size:14px; margin:0 14px; height:40px; line-height:40px; font-weight:bold;}
+.main-top li .con{width:66px; height:122px; border:1px solid #ff6599; background:#fff;  position:absolute; left:0; top:39px; display:none;}
+.main-top li .con a,.main-top li .con-1 a{height:30px; line-height:30px; display:block;color:#ff6599; text-align:center; margin:0;}
+.main-top-3{}
+.main-top-3,.main-top-last{position:relative; }
+.main-top span{width:5px;height:5px;display:inline-block; padding:0; margin-left:1px;}
+.main-top li .con-1{width:111px; height:92px; border:1px solid #ff6599; background:#fff;  position:absolute; left:0; top:39px; display:none;}
+.nav:hover {background:#ed3577;}
+.main-top-3:hover .con{display:block;}
+.main-top-last:hover .con-1{display:block;}
+
+.main{background:url(img/60a7aa26a36bc094eefbfe44a067_2000_420.ch.jpg) repeat-x center top;}
+.banner{width:1200px; margin:0 auto;}
+.ban-one{position:relative; height:574px;}
+.ban-left{width:198px; height:572px; background:#fff; padding:0 20px; border:1px solid #e6e6e6; position:absolute; left:0; top:0;}
+.ban-left li{width:198px; border-bottom:1px dotted #cbcbcb; position:relative;}
+.ban-left li a{display:inline-block; color:#666; margin-right:12px;margin-bottom:11px;}
+.ban-left li p{font-size:16px; color:#ff6a9c; font-weight:bold; margin:10px 0;}
+.ban-left li i{position:absolute;right:0; top:50px; display:block; width:12px; height:12px;}
+.tit-1{background:url(img/icon-1.jpg) no-repeat; padding-left:21px;}
+.tit-2{background:url(img/icon-6_03.jpg) no-repeat; padding-left:21px;}
+.tit-3{background:url(img/icon-6_06.jpg) no-repeat; padding-left:21px;}
+.tit-4{background:url(img/icon-6_08.jpg) no-repeat; padding-left:21px;}
+.tit-5{background:url(img/icon-6_10.jpg) no-repeat; padding-left:21px;}
+.ban-left li .color{color:#f69;}
+.ban-left .ban-left-last{border:0;}
+.ban-right{position:absolute;right:0; top:0;}
+.ban-right img{border-bottom:1px solid #e6e6e6;}
+.ban-bottom{position:absolute; right:0; top:430px;}
+.ban-bottom li{float:left; margin-left:10px;}
+.ban-bottom li img{border:1px solid #e6e6e6;}
+
+
+.ban-tit-1{width:157px; height:26px; background:url(img/wel_ico2.png) no-repeat 0 0; text-indent:-999em; margin-top:20px; margin-bottom:7px;}
+
+.ban-two{border-top:1px solid #e6e6e6; padding-top:15px;}
+.ban-two li{width:180px; float:left; margin-right:24px;}
+.ban-two-2{display:block; height:36px;  line-height:18px; margin:6px 0 5px 0;}
+.ban-two li p{color:#f69; line-height:12px; padding-bottom:12px; border-bottom:1px dotted #e6e6e6; margin-bottom:10px; font-size:14px; }
+.ban-two li b{display:block;margin-bottom:20px;}
+.ban-two li p span{text-decoration:line-through; font-size:9px;}
+.ban-two .six{margin:0;}
+
+.ban-tit-2 p{width:157px; height:23px; background:url(img/wel_ico2.png) no-repeat 0 -240px; text-indent:-999em; margin-top:20px; margin-bottom:7px; }
+.ban-tit-2 a{display:block; margin-top:22px; color:#999; font-size:14px;}
+
+.ban-three{height:385px;}
+.pic{display:block; margin-top:23px; }
+.ban-tit-3,.ban-tit-4,.ban-tit-5,.ban-tit-6,.ban-tit-7{border-bottom:1px solid #e6e6e6; height:32px; margin-top:20px;}
+.ban-tit-3 h1 .ico-2{width:77px; height:23px; background:url(img/wel_ico2.png) no-repeat 0 -44px; text-indent:-999em;}
+.ban-tit-3 h1 .ico-3,.ban-tit-4 h1 .ico-3,.ban-tit-5 h1 .ico-3,.ban-tit-6 h1 .ico-3{border-left:1px dotted #ccc; margin-left:10px; margin-top:5px; padding-left:9px; font-size:14px; line-height:16px; height:16px;}
+ strong{font-weight:bold;}
+.ban-tit-3 a,.ban-tit-4 a,.ban-tit-5 a,.ban-tit-6 a{display:block; color:#999; font-size:14px;}
+  
+.ban-four{ border-bottom:1px solid #e6e6e6; height:620px;}      
+.ban-four-1 {border-right:1px solid #e6e6e6; }
+.ban-four-l{width:920px; padding-top:20px; padding-right:20px; }
+.ban-four-l a{width:180px; height:255px; position:relative; display:block;}
+.ban-four-l a .opabox{width:180px; height:32px; position:absolute; left:0; bottom:0;}
+.ban-four-l a .opabox .opa{width:180px; height:32px;background:url(img/bar_bg.png) no-repeat; opacity:0.4; filter:alpha(opacity:40); position:absolute; left:0; top:0;;}
+.ban-four-l a .opabox .content{position:relative; color:#fff; font-size:14px; height:32px; line-height:32px; text-align:center;  z-index:3}
+.ban-four-l li{margin-right:5px; margin-bottom:5px;}
+.ban-four-l .pic-5{margin-right:0;}
+
+.ban-four-bottom{}
+.ban-four-bottom div{width:312px; height:44px; border-left:1px dotted #e6e6e6; margin-top:18px; margin-bottom:17px;}
+.ban-four-bottom div p a{font-size:16px; color:#f69; height:44px; line-height:44px; margin-left:12px; margin-right:19px;}
+.ban-four-bottom div h1{height:44px; width:230px;}
+.ban-four-bottom div .special{width:237px;}
+.ban-four-bottom div h1 a{margin-right:5px;  line-height:22px;}
+
+.ban-four-right{width:240px; padding-top:20px;}
+.ban-four-right h1 p{font-size:16px; font-weight:bold;}
+.ban-four-right h1 a{font-size:14px; color:#999; }
+.ban-four-right div{ height:35px; padding:14px 0 14px 46px; border-bottom:1px dotted #e6e6e6; position:relative;}
+.ban-four-right div img{position:absolute; left:0; top:15px;}
+.ban-four-right div a{line-height:12px; height:12px; }
+.ban-four-right div p{color:#999; margin-top:9px;}
+.ban-four-right  .ban-four-right-last{border:0;}
+
+.ban-tit-4 h1 .ico-2{width:79px; height:22px; background:url(img/wel_ico2.png) no-repeat 0 -83px; text-indent:-999em;}
+.ban-tit-5 h1 .ico-2{width:79px; height:23px; background:url(img/wel_ico2.png) no-repeat 0 -120px; text-indent:-999em;}
+.ban-tit-6 h1 .ico-2{width:75px; height:27px; background:url(img/wel_ico2.png) no-repeat 0 -158px; text-indent:-999em;}
+.ban-tit-7 h1 .ico-2{width:117px; height:22px; background:url(img/wel_ico2.png) no-repeat 0 -201px; text-indent:-999em;}
+.ban-tit-7{border:0;}
+.ban-tit-7 .ico-4 a{font-size:14px;padding:0 15px; border-right:1px dotted #e6e6e6; color:#999; padding-right:0;}
+.ban-tit-7 .ico-4 .ico-last{border:0;}
+
+.ban-last .last-1{width:200px; border:1px solid #e6e6e6; padding:13px; margin-right:15px;}
+.ban-last .last-1 a{display:block; font-size:14px; font-weight:bold; margin-bottom:10px;}
+.ban-last .last-1 p{color:#999; height:20px; line-height:20px;}
+.ban-last .last-1 input{width:64px; height:20px; color:#fff; background:#f69; line-height:20px; border:0; outline:none;}
+.ban-last .last-bottom{height:20px; margin-top:13px;}
+.ban-last  div.last-5{margin:0;}
+
+.footer{background:#f5f5f5; width:100%; border-top:1px solid #e6e6e6; margin-top:20px;}
+.footer-mac{width:1200px; margin:0 auto; padding-top:30px;}
+.footer-top{height:210px;}
+.footer .footer-1{width:240px;}
+.footer-1 span{display:block; width:35px; height:36px; background:url(img/mls_global140607.png) no-repeat 0 -114px;margin-right:13px;}
+.footer-1 .footer-1-2{}
+.footer-1 .footer-1-2 h3{font-size:16px; font-weight:bold;}
+.footer-1 .footer-1-2 p{color:#999; height:28px; line-height:27px;}
+.footer-2{width:123px;}
+.footer-3{width:150px;}
+.footer-2 dt,.footer-3 dt,.footer-4 dt{font-size:16px; font-weight:bold;margin-bottom:10px;}
+.footer-2 dd a{color:#999; height:28px; line-height:25px;}
+.footer-3 img{margin-top:20px;}
+.footer-4 a{display:block; width:131px; height:98px; background:url(img/mls_global140607.png) no-repeat 0 -400px; margin-top:5px;}
+
+.footer-center{height:21px; border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; padding:9px 10px 0 10px; }
+.footer-center .footer-cen-l a{padding-right:11px; color:#666;}
+.footer-bottom{padding:10px 8px;}
+.footer-bottom p{line-height:22px;}
+a:hover{color:#f69;}
+
+.fix{ display:block; position:fixed; right:0; bottom:100px; width:60px; height:45px; border:1px solid #e6e6e6; color:#f69; text-align:center; padding-top:15px; color:#999;}
+.fix:hover{color:#f69;}
+
+</style>
+</head>
+		<div class="top">
+                <ul class="top-inner clearfix">
+                        <li class="fr six"><a href="#">客户服务</a></li>
+                        <li class="fr"><a href="#"><span class="five">&nbsp;</span>下载APP</a></li>
+                        <li class="fr"><a href="#"><span class="four">&nbsp;</span>我的订单</a></li>
+                        <li class="fr"><a href="#"><span class="three">&nbsp;</span>我的购物车<i>0</i></a></li>
+                        <li class="fr"><a href="#">	注册</a></li>
+                        <li class="fr"><a href="#">登录</a></li>
+                        <li class="fr"><a href="#"><span class="two">&nbsp;</span>QQ登录</a></li>
+                        <li class="fr "><a href="#" class="one">微信登录</a></li>
+                </ul>
+        </div>
+        <div class="header">
+        		<a href="#">美丽说</a>
+                 <div class="search claearfix">
+                        <select class="fl">
+                               <option>宝贝</option>
+                               <option>商家</option>
+                               <option>杂志</option>
+                               <option>用户</option>
+                          </select>
+                          <span class="fl clearfix">
+                                <em class="fl"></em>
+                               <input type="text" placeholder="搜流行商品" class="tex"/>
+                          </span>
+                          <input type="button" value="搜索"  class="btn fr"/>
+                 </div>
+         </div>
+         <div class="main-top">
+         		<ul class="clearfix main-top-f">
+                		<li class="nav"><a href="#">首页</a></li>
+                        <li class="nav"><a href="#">今日最热</a></li>
+                        <li class="main-top-3 nav">
+                                <a href="#">衣服
+                                        <span><img src="img/icon-5.jpg" /></span></a>
+                        		<div class="con">
+                                		<a href="#">上衣</a>
+                                        <a href="#">裙子</a>
+                                        <a href="#">裤子</a>
+                                        <a href="#">内衣</a>
+                                </div>
+                        </li>
+                        <li class="nav"><a href="#">鞋子</a></li>
+                        <li class="nav"><a href="#">包包</a></li>
+                        <li class="nav"><a href="#">配饰</a></li>
+                        <li class="nav"><a href="#">美妆</a></li>
+                        <li class="nav"><a href="#">特卖</a></li>
+                        <li class="nav"><a href="#">团购</a></li>
+                        <li class="nav"><a href="#">好店</a></li>
+                        <li class="nav"><a href="#">杂志</a></li>
+                        <li class="main-top-last nav">
+                        		<a href="#">爱美丽club
+                                		<span><img src="img/icon-5.jpg" /></span>
+                                </a>
+                                <div class="con-1">
+                                        <a href="#">达人</a>
+                                        <a href="#">福利社</a>
+                                        <a href="#">EX0-M粉丝专区</a>
+                                </div>
+                        </li>
+                </ul>
+         </div>
+      
+  	  <div class="main">
+         		<div class="banner">
+                		<div class="ban-one">
+                                <ul class=" ban-left">
+                                		<li> 
+                                                <p class="tit-1">最热</p>
+                                                <a href="#">冬季新品</a>
+                                                <a href="#" class="color">毛衣</a>
+                                                <a href="#">活力运动鞋</a><br />
+                                                <a href="#">连衣裙</a>
+                                                <a href="#" class="color">新款靴子</a>
+                                                <a href="#">单肩包</a><br />
+                                                <a href="#">暖冬美裤</a>
+                                                <a href="#">外套</a>
+                                                <a href="#" class="color">入冬打底裤</a>
+                                                <i><a href="#">&gt;</a></i>
+                                        </li>
+                                        <li> 
+                                                <p class="tit-2">衣服</p>
+                                                <a href="#" class="color">卫衣</a>
+                                                <a href="#">开衫</a>
+                                                <a href="#">大衣</a>
+                                                <a href="#">小脚裤</a>
+                                                <a href="#">牛仔裤</a>
+                                                <a href="#" class="color">半身裙</a>
+                                                <a href="#">长袖连衣裙</a>
+                                                <a href="#">打底裤</a>
+                                                <a href="#">秋冬美裙</a>
+                                                <a href="#" class="color">打底衫</a>
+                                                <i><a href="#">&gt;</a></i>
+                                        </li>
+                                        <li>
+                                                <p class="tit-3">靴子</p>
+                                                <a href="#">靴子</a>
+                                                <a href="#" class="color">短靴</a>
+                                                <a href="#">长靴</a>
+                                                <a href="#" class="color">雪地靴</a>
+                                                <a href="#">运动鞋</a>
+                                                <a href="#">高跟鞋</a>
+                                                <a href="#">秋冬美鞋</a>
+                                                <a href="#">优质热销鞋履</a>
+                                                <a href="#">过膝靴</a>
+                                                <a href="#">马丁靴</a>
+                                                <i><a href="#">&gt;</a></i>
+                                        </li>
+                                        <li>
+                                                <p class="tit-4">包包</p>
+                                                <a href="#" class="color">冬季新款包包</a>
+                                                <a href="#" class="color">双肩包</a>
+                                                <a href="#">行李箱</a>
+                                                <a href="#" class="color">超高人气必败潮包</a>
+                                                <a href="#">大包</a>
+                                                <a href="#" class="color">钱包</a>
+                                                <a href="#" class="color">单肩包</a>
+                                                <a href="#">手提包</a>
+                                                <a href="#">小包</a>
+                                                <a href="#" class="color">斜挎包</a>
+                                                <i><a href="#">&gt;</a></i>
+                                        </li>
+                                        <li class="ban-left-last">
+                                                <p class="tit-5">配饰</p>
+                                                <a href="#" class="color">围巾</a>
+                                                <a href="#">帽子</a>
+                                                <a href="#" class="color">项链 </a>
+                                                <a href="#">手机壳</a>
+                                                <a href="#" class="color">耳钉</a>          
+                                                <a href="#">手链</a>
+                                                <a href="#" class="color">发箍</a>
+                                                <a href="#">手表</a>
+                                                <a href="#" class="color">连裤袜</a>
+                                                <a href="#">袜子</a>
+                                                <a href="#">丝巾</a>
+                                                <a href="#" class="color">腰带</a>
+                                                <i><a href="#">&gt;</a></i>
+                                        </li>
+                                </ul>
+                                <div class="ban-right ">
+                                		<a href="#"><img src="img/5f8663325e2869e65bf2722db221_200_139.cg.jpg" /></a>
+                                        <a href="#"><img src="img/c8ef6839d95786830ebf46c5d7b6_200_139.cf.jpg" /></a>
+                                        <a href="#"><img src="img/63ca018fb1b5a17a64118d45df5a_200_139.cf.jpg" /></a>
+                                </div>
+                                <ul class="ban-bottom clearfix">
+                                		<li>
+                                                <a href="#">
+                                                		<img src="img/e4563da0edb81d3d0e558306a5e8_175_142.cg.jpg" />
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a href="#">
+                                                		<img src="img/f878a1fea7aa29e493bdaad44324_175_142.cf.jpg" />
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a href="#">
+                                                		<img src="img/134808f537c26dcdb9faf67662b6_175_142.cg.jpg" />
+                                                </a>
+                                        </li>
+                                                <li>
+                                                <a href="#">
+                                              		  <img src="img/7a2b7f45d813c0ccbe840e086c87_175_142.cf.jpg" />
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a href="#">
+                                                		<img src="img/98495ea9f28135426810ac6c263b_198_142.ch.jpg" />
+                                                </a>
+                                        </li>
+                                </ul>
+               		 </div>
+                     <p class="ban-tit-1">人气推荐单品</p>
+                     <ul class="ban-two clearfix">
+                     		<li>
+                            		<a href="#">
+                                    		<img src="img/267778da94332bcf9572ededaddc_640_900.cf.jpg_d3639f8a_s2_180_255.jpg" />
+                                    </a>
+                                    <a href="#" class="ban-two-2">美丽无上限&nbsp;不到50元</a>
+                                    <p>￥49.00&nbsp;<span>￥189.00</span></p>
+                                    <b>1885人已购买</b>
+                            </li>
+                            <li>
+                            		<a href="#">
+                                    		<img src="img/675d4d54bc96d9b6892336bc6d6f_650_975.cc.jpg_37369464_s2_180_255.jpg"/>
+                                    </a>
+                                    <a href="#" class="ban-two-2">高人气打底白衬衫&nbsp;打底外穿都时尚</a>
+                                    <p>￥49.00&nbsp;<span>￥98.00</span></p>
+                                    <b>3225人已购买</b>
+                            </li>
+                            <li>
+                            		<a href="#">
+                                    		<img src="img/8a6098460645ded183aa1a6d9077_640_900.cf.jpg_ab011515_s2_180_255.jpg" />
+                                    </a>
+                                    <a href="#" class="ban-two-2">美丽无上限&nbsp;不到50元</a>
+                                    <p>￥79.00&nbsp;<span>￥238.00</span></p>
+                                    <b>325人已购买</b>
+                            </li>
+                            <li>
+                            		<a href="#">
+                                    		<img src="img/f031452afdfc8488b04bdc06d649_640_900.cg.jpg_c289ef4d_s2_180_255.jpg"/>
+                                    </a>
+                                    <a href="#" class="ban-two-2">美丽无上限&nbsp;不到50元</a>
+                                    <p>￥108.00&nbsp;<span>￥360.00</span></p>
+                                    <b>920人已购买</b>
+                            </li>
+                            <li>
+                            		<a href="#">
+                                    		<img src="img/2f7f7de25e1a2d8f34b3d98299fa_640_900.cc.jpg_0e8a693f_s2_180_255.jpg"/>
+                                    </a>
+                                    <a href="#" class="ban-two-2">美丽无上限&nbsp;不到50元</a>
+                                    <p>￥42.00&nbsp;<span>￥150.00</span></p>
+                                    <b>561人已购买</b>
+                            </li>
+                            <li class="six">
+                            		<a href="#">
+                                    		<img src="img/522931625b5df7051f90c157b36c_640_960.cg.jpg_f8771cbf_s2_180_255.jpg"/>
+                                    </a>
+                                    <a href="#" class="ban-two-2">美丽无上限&nbsp;不到50元</a>
+                                    <p>￥59.00&nbsp;<span>￥118.00</span></p>
+                                    <b>452人已购买</b>
+                            </li>
+                            <li>
+                            		<a href="#">
+                                    		<img  src="img/7dc62984bdb80bdb0aa665812f55_640_900.c8.jpg_c0c5c696_s2_180_255.jpg"/>
+                                    </a>
+                                    <a href="#" class="ban-two-2">美丽无上限&nbsp;不到50元</a>
+                                    <p>￥48.00&nbsp;<span>￥128.00</span></p>
+                                    <b>4463人已购买</b>
+                            </li>
+                            <li>
+                            		<a href="#">
+                                    		<img src="img/7b52f050ad604f8eecc682aaec32_640_900.c6.jpg_4a2267ea_s2_180_255.jpg"/>
+                                    </a>
+                                    <a href="#" class="ban-two-2">美丽无上限&nbsp;不到50元</a>
+                                    <p>￥29.00&nbsp;<span>￥139.00</span></p>
+                                    <b>15259人已购买</b>
+                            </li>
+                            <li>
+                            		<a href="#">
+                                    		<img src="img/c95fb4423a3bb24b94a87b281544_640_832.cf.jpg_21edab6f_s2_180_255.jpg"/>
+                                    </a>
+                                    <a href="#" class="ban-two-2">美丽无上限&nbsp;不到50元</a>
+                                    <p>￥54.80&nbsp;<span>￥78.00</span></p>
+                                    <b>13439人已购买</b>
+                            </li>
+                            <li>
+                            		<a href="#">
+                                    		<img src="img/e73ca368bee3a640c89e82c6e7c8_640_900.c8.jpg_aa2c3c34_s2_180_255.jpg" />
+                                    </a>
+                                    <a href="#" class="ban-two-2">美丽无上限&nbsp;不到50元</a>
+                                    <p>￥98.00&nbsp;<span>￥488.00</span></p>
+                                    <b>3510人已购买</b>
+                            </li>
+                            <li>
+                            		<a href="#">
+                                    		<img src="img/8f189f9cfbbd144f9a229819ff17_640_900.cc.jpg_29725157_s2_180_255.jpg"  />
+                                    </a>
+                                    <a href="#" class="ban-two-2">美丽无上限&nbsp;不到50元</a>
+                                    <p>￥55.00&nbsp;<span>￥109.00</span></p>
+                                    <b>6419人已购买</b>
+                            </li>
+                            <li class="six">
+                            		<a href="#">
+                                    		<img  src="img/c9aff7dc940bb716c66fddd0cc01_640_832.cf.jpg_f4023743_s2_180_255.jpg" />
+                                    </a>
+                                    <a href="#" class="ban-two-2">美丽无上限&nbsp;不到50元</a>
+                                    <p>￥35.00&nbsp;<span>￥78.00</span></p>
+                                    <b>5488人已购买</b>
+                            </li>
+                     </ul>
+                         
+                      <ul class="ban-two clearfix">
+                     		<li>
+                            		<a href="#">
+                                    		<img src="img/ffaf5416e4ecb51f79413b20fd4e_640_832.cc.jpg_04e0a2b5_s2_180_255.jpg" />
+                                    </a>
+                                    <a href="#" class="ban-two-2">荧光色针织帽</a>
+                                    <p>￥9.90&nbsp;<span>￥45.00</span></p>
+                                    <b>3179人已购买</b>
+                            </li>
+                            <li>
+                            		<a href="#">
+                                    		<img src="img/ff591cdb463fd28af5af2fef6001_640_900.ch.jpg_ae011f38_s2_180_255.jpg" />
+                                    </a>
+                                    <a href="#" class="ban-two-2">小香风毛绒套装</a>
+                                    <p>￥99.00&nbsp;<span>￥296.00</span></p>
+                                    <b>1335人已购买</b>
+                            </li>
+                            <li>
+                            		<a href="#">
+                                    		<img src="img/bf38eea4d89c4483b46afca76e97_640_900.ch.jpg_01e9db14_s2_180_255.jpg" />
+                                    </a>
+                                    <a href="#" class="ban-two-2">弹力修身加绒pu皮裤</a>
+                                    <p>￥59.80&nbsp;<span>￥264.00</span></p>
+                                    <b>2070人已购买</b>
+                            </li>
+                            <li>
+                            		<a href="#">
+                                    		<img src="img/0ee115d65a61831c540e5630c3d2_640_842.cg.jpg_7b7865d4_s2_180_255.jpg" />
+                                    </a>
+                                    <a href="#" class="ban-two-2">过膝长靴</a>
+                                    <p>￥65.00&nbsp;<span>￥75.00</span></p>
+                                    <b>5055人已购买</b>
+                            </li>
+                            <li>
+                            		<a href="#">
+                                    		<img src="img/f70cf473e26bf57d33f28ee04cfe_640_960.cg.jpg_28bebea1_s2_180_255.jpg"/>
+                                    </a>
+                                    <a href="#" class="ban-two-2">连帽中长款加厚棉衣</a>
+                                    <p>￥118.00&nbsp;<span>￥258.00</span></p>
+                                    <b>2139人已购买</b>
+                            </li>
+                            <li class="six">
+                            		<a href="#">
+                                    		<img src="img/bfe6da839a60eac1e20bb4f79b5f_640_900.ch.jpg_ee608ff2_s2_180_255.jpg" />
+                                    </a>
+                                    <a href="#" class="ban-two-2">字母拉杆箱</a>
+                                    <p>￥129.00&nbsp;<span>￥500.00</span></p>
+                                    <b>10228人已购买</b>
+                            </li>
+                      </ul>
+                       
+                      <a href="#" class="pic"><img src="img/meilishuo.jpg" /></a>
+                      <div class="ban-tit-3 clearfix">
+                     		<h1 class="fl">
+                                    <span class="ico-2 fl">衣服</span>
+                                    <span class="fl ico-3" >今日上新<strong>4098</strong>件</span>
+                            </h1>
+                            <a href="#" class="fr">查看所有衣服&gt;</a>
+                     </div>
+                     <div class="ban-four clearfix">
+                     		<div class="ban-four-1 fl">
+                                    <ul class="ban-four-l clearfix">
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/5c2dbdcd82fcfb396e692b67eca4_1900_2660.cg.jpg_ebe3f1d5_s2_180_255.jpg">
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">本季最CHIC套装</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/3c6fca87a553f63306f30e80c3bb_640_900.cf.jpg_96bc3895_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">冬季实穿连衣裙</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/5580b1f22ab0f476a48910f26e66_640_900.cg.jpg_17afab7e_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">简约休闲毛衣</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/da92c7b5790bef01145a5435d1e0_445_628.cf.jpg_176ae555_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">入冬必穿打底裤</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl pic-5">
+                                                    <a href="#">
+                                                         <img src="img/605e8673b7f79df6cd1fcaa483bd_502_709.ch.jpg_da623016_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">秋冬美裙任你选</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/9c52c46ef5d38bfbae3d17955881_640_960.cf.jpg_24a91126_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">个性卫衣随意穿</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img  src="img/890b90be0dc39883466701c10893_1216_1715.cg.jpg_be1cb02b_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">秋冬至in半身裙</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/ffd169a276c793a7990ece46e71b_640_832.ch.jpg_8597ae33_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">本季当红外套</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/1583b77dfe31af933eeff13da4bf_640_900.ch.jpg_d2948eed_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">百变打底衫</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl pic-5">
+                                                    <a href="#">
+                                                         <img src="img/fdf308da705c2d7e3f9134c0fb60_640_900.ch.jpg_ea113416_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">达人必备小脚裤</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                    </ul>
+                                    <div class="ban-four-bottom clearfix">
+                                            <div class="clearfix fl">
+                                                    <p class="fl"><a href="#">上衣</a></p>
+                                                    <h1 class="fl">
+                                                            <a href="#">背心</a>
+                                                           <a href="#">针织衫</a>
+                                                           <a href="#">打底衫</a>
+                                                            <a href="#">衬衫</a>
+                                                            <a href="#">卫衣</a>
+                                                            <a href="#">情侣装</a>
+                                                            <a href="#">外套</a>
+                                                            <a href="#">韩范儿T恤</a>
+                                                            <a href="#">小西装</a>
+                                                            <a href="#">马甲</a>
+                                                    </h1>
+                                              </div>
+                                              <div class="clearfix fl">
+                                                    <p class="fl"><a href="#">裙子</a></p>
+                                                    <h1 class="fl">
+                                                            <a href="#">连衣裙</a>
+                                                           <a href="#">半身裙</a>
+                                                           <a href="#">长袖连衣裙</a>
+                                                            <a href="#">秋冬美裙</a><br />
+                                                            <a href="#">最受欢迎裙子榜</a>
+                                                            <a href="#">衣裙套装</a>
+                                                            <a href="#">A字群</a>
+                                                            <a href="#">长裙</a>
+                                                    </h1>
+                                              </div>
+                                              <div class="clearfix fl">
+                                                    <p class="fl"><a href="#">裤子</a></p>
+                                                    <h1 class="fl">
+                                                            <a href="#">九分裤</a>
+                                                           <a href="#">短裤</a>
+                                                           <a href="#">背带裤</a>
+                                                            <a href="#">小脚裤</a>
+                                                            <a href="#">高腰裤</a><br />
+                                                            <a href="#">牛仔裤</a>
+                                                            <a href="#">哈伦裤</a>
+                                                            <a href="#">打底裤</a>
+                                                            <a href="#">西装裤</a>
+                                                            <a href="#">运动裤</a>
+                                                    </h1>
+                                              </div>
+                                    </div>
+                            </div>
+                            <div class="ban-four-right fr">
+                            		<h1 class="clearfix">
+                                            <p class="fl">最热衣服好店</p>
+                                            <a href="#" class="fr">更多好店&gt;</a>
+                                    </h1>
+                                    <div>
+                                    		<img src="img/icon7.jpg" />
+                                    		<a href="#">妖精的衣橱</a>
+                                            <p>235件商品/总销量84572</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_06.jpg" />
+                                    		<a href="#">1314气场女装</a>
+                                            <p>238件商品/总销量71856</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_08.jpg" />
+                                    		<a href="#">nnassa旗舰店</a>
+                                            <p>484件商品/总销量75222</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_10.jpg" />
+                                    		<a href="#">我是可清</a>
+                                            <p>154件商品/总销量95936</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_12.jpg" />
+                                    		<a href="#">花猫女装</a>
+                                            <p>736件商品/总销量65136</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_14.jpg" />
+                                    		<a href="#">专衣</a>
+                                            <p>295件商品/总销量92594</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_16.jpg" />
+                                    		<a href="#">TENOE天妖</a>
+                                            <p>247件商品/总销量36546</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_18.jpg" />
+                                    		<a href="#">wencoco</a>
+                                            <p>473件商品/总销量47894</p>
+                                    </div>
+                                     <div class="ban-four-right-last">
+                                    		<img src="img/8_20.jpg" />
+                                    		<a href="#">cocobella旗舰店</a>
+                                            <p>105件商品/总销量13381</p>
+                                    </div>
+                            </div>
+                     </div> 
+                     <div class="ban-tit-4 clearfix">
+                             <h1 class="fl">
+                                     <span class="ico-2 fl">鞋子</span>
+                                     <span class="fl ico-3" >今日上新<strong>6876</strong>件</span>
+                            </h1>
+                            <a href="#" class="fr">查看所有鞋子&gt;</a>
+                     </div>
+                     <div  class="ban-four clearfix">
+                     		<div class="ban-four-1 fl">
+                                    <ul class="ban-four-l clearfix">
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/a0551a3ae3fbb1c7023dfcc8c4fa_640_900.cg.jpg_39c9e2b8_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">青春活力运动鞋</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/ed0f7873c7a37b45d74eb5099eb3_640_960.cg.jpg_1d23e04d_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">萌萌哒的豆豆鞋</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/8fbaf4428e309073e20067b9b286_640_970.ch.jpg_96dd5903_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">时尚保暖美长靴</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img  src="img/7417473c0ff95e16ccc511652ad5_640_900.cc.jpg_0091c1a0_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">领跑秋冬雪地靴</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl pic-5">
+                                                    <a href="#">
+                                                         <img src="img/799618c485f69b58a78f5ddf350a_640_900.cg.jpg_f5becd2e_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">潮流至in俏短靴</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/ee5e00fd4055ef4dcb33d8047371_640_832.ch.jpg_6a3f3fb9_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">优质热销美鞋</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img  src="img/e4879a37946dca6e59c5426522a9_640_960.ch.jpg_b4669978_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">秋冬美鞋海量选</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/2bb5a55edafe8bf25fd9d49a9c40_714_1000.ch.jpg_23b89cb3_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">换季美靴凹凸型</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img  src="img/becad60780be065f9dfe25a80ac5_640_900.cg.jpg_97b3e1c8_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">娇小妹妹爱粗根</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl pic-5">
+                                                    <a href="#">
+                                                         <img src="img/04c683edaa29159503c397c6a4d0_640_900.cc.jpg_48d0c85c_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">令人心动の“美高跟”</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                    </ul>
+                                    <div class="ban-four-bottom clearfix">
+                                            <div class="clearfix fl">
+                                                    <p class="fl"><a href="#">休闲</a></p>
+                                                    <h1 class="fl">
+                                                            <a href="#">一脚蹬</a>
+                                                           <a href="#">休闲鞋</a>
+                                                           <a href="#">帆布鞋</a>
+                                                            <a href="#">运动鞋</a>
+                                                            <a href="#">高帮鞋</a>
+                                                            <a href="#">豆豆鞋</a>
+                                                            <a href="#">便鞋</a>
+                                                            <a href="#">板鞋</a>
+                                                            <a href="#">厚底运动鞋</a>
+                                                            <a href="#">拖鞋</a>
+                                                    </h1>
+                                              </div>
+                                              <div class="clearfix fl">
+                                                    <p class="fl"><a href="#">潮流</a></p>
+                                                    <h1 class="fl">
+                                                            <a href="#">平底鞋</a>
+                                                           <a href="#">厚底鞋</a>
+                                                           <a href="#">牛津鞋</a>
+                                                            <a href="#">松糕鞋</a>
+                                                            <a href="#">雪地靴</a>
+                                                            <a href="#">乐福鞋</a>
+                                                            <a href="#">内增高运动鞋</a>
+                                                            <a href="#">短靴</a>
+                                                            <a href="#">马丁靴</a>
+                                                    </h1>
+                                              </div>
+                                              <div class="clearfix fl">
+                                                    <p class="fl"><a href="#">时尚</a></p>
+                                                    <h1 class="fl">
+                                                            <a href="#">高跟鞋</a>
+                                                           <a href="#">平底短靴</a>
+                                                           <a href="#">坡跟鞋</a>
+                                                            <a href="#">粗跟鞋</a>
+                                                            <a href="#">棉鞋</a><br />
+                                                            <a href="#">尖头鞋</a>
+                                                            <a href="#">及裸靴</a>
+                                                            <a href="#">切尔西靴</a>
+                                                            <a href="#">高跟短靴</a>
+                                                    </h1>
+                                              </div>
+                                    </div>
+                            </div>
+                            <div class="ban-four-right fr">
+                            		<h1 class="clearfix">
+                                            <p class="fl">最热鞋子好店</p>
+                                            <a href="#" class="fr">更多好店&gt;</a>
+                                    </h1>
+                                    <div>
+                                    		<img src="img/8_22.jpg" />
+                                    		<a href="#">左右时尚</a>
+                                            <p>2060件商品/总销量53197</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_24.jpg" />
+                                    		<a href="#">funny shoes</a>
+                                            <p>801件商品/总销量55340</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_26.jpg" />
+                                    		<a href="#">谁叫我是周杰伦</a>
+                                            <p>497件商品/总销量56313</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_28.jpg" />
+                                    		<a href="#">涩琪女鞋</a>
+                                            <p>325件商品/总销量51501</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_30.jpg" />
+                                    		<a href="#">唯美女鞋馆</a>
+                                            <p>281件商品/总销量49329</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_32.jpg" />
+                                    		<a href="#">米小兔</a>
+                                            <p>186件商品/总销量37389</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_34.jpg" />
+                                    		<a href="#">原木家</a>
+                                            <p>121件商品/总销量33114</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_36.jpg" />
+                                    		<a href="#">YOYO潮品</a>
+                                            <p>109件商品/总销量8708</p>
+                                    </div>
+                                     <div class="ban-four-right-last">
+                                    		<img src="img/8_38.jpg" />
+                                    		<a href="#">Rmatt</a>
+                                            <p>76件商品/总销量798</p>
+                                    </div>
+                            </div>
+                     </div>
+                     <div class="ban-tit-5 clearfix">
+                             <h1 class="fl">
+                                     <span class="ico-2 fl">包包</span>
+                                     <span class="fl ico-3" >今日上新<strong>1485</strong>件</span>
+                            </h1>
+                            <a href="#" class="fr">查看所有包包&gt;</a>
+                     </div>
+                     <div  class="ban-four clearfix">
+                     		<div class="ban-four-1 fl">
+                                    <ul class="ban-four-l clearfix">
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/37f28d3f1569ccee51b54d688b41_640_832.cc.jpg_7aee466e_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">爱不释手の时髦包包</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/0c31f8935c1e8311cf083a124e78_640_832.cg.jpg_84c346e4_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">爱不释手の聚财神器</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/8372c56c4fa7bf471931bf269449_640_900.cf.jpg_ff089cb6_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">搜罗2014新款</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img  src="img/dfc41ade15038776c22176fc079b_640_900.cc.jpg_70957322_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">明星都爱の斜挎包</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl pic-5">
+                                                    <a href="#">
+                                                         <img src="img/77090c057128180681938fa7959b_640_832.cf.jpg_4524279d_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">实时最新款包包</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/384b42f88751f71a6be02425ef2d_640_900.cc.jpg_18e10ed9_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">背上最潮双肩包</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img  src="img/f740e6be572ceed4d0fe466705c4_1000_1500.cg.jpg_2179acea_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">明星逛街首选大包</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/dcf235c9af48627b2e540776d1bf_640_832.cg.jpg_a9cb84f9_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">秀出你の个性去旅行</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/39085c4e0ab90293095a4e858e4f_640_832.cc.jpg_0d67eb72_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">妹子最喜爱の包包</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl pic-5">
+                                                    <a href="#">
+                                                         <img src="img/85a8b7c432346c7c1ae3ae92ae67_640_900.cf.jpg_33c090eb_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">时尚与实用の完美结合</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                    </ul>
+                                    <div class="ban-four-bottom clearfix">
+                                            <div class="clearfix fl">
+                                                    <p class="fl"><a href="#">潮流</a></p>
+                                                    <h1 class="fl">
+                                                            <a href="#">复古包</a>
+                                                           <a href="#">邮差包</a>
+                                                           <a href="#">机车包</a>
+                                                            <a href="#">长款钱包</a>
+                                                            <a href="#">真皮包</a>
+                                                            <a href="#">休闲双肩包</a>
+                                                            <a href="#">最受欢迎包包榜单</a>
+                                                            <a href="#">信封包</a>
+                                                    </h1>
+                                              </div>
+                                              <div class="clearfix fl">
+                                                    <p class="fl"><a href="#">甜美</a></p>
+                                                    <h1 class="fl">
+                                                            <a href="#">学院双肩包</a>
+                                                           <a href="#">小包</a>
+                                                           <a href="#">贝壳包</a>
+                                                            <a href="#">链条包</a>
+                                                            <a href="#">手拿包</a>
+                                                            <a href="#">韩版包</a>
+                                                            <a href="#">约会LOOK包包</a>
+                                                            <a href="#">水桶包</a>
+                                                            <a href="#">斜挎包</a>
+                                                    </h1>
+                                              </div>
+                                              <div class="clearfix fl">
+                                                    <p class="fl"><a href="#">百搭</a></p>
+                                                    <h1 class="fl  special">
+                                                            <a href="#">2014秋冬新款包包</a>
+                                                           <a href="#">双肩包</a>
+                                                           <a href="#">单肩包</a >
+                                                            <a href="#">行李箱</a>
+                                                            <a href="#">钱包</a>
+                                                            <a href="#">大包</a>
+                                                            <a href="#">	买手精选新品包包</a>
+                                                            <a href="#">性价比包包</a>
+                                                    </h1>
+                                              </div>
+                                    </div>
+                            </div>
+                            <div class="ban-four-right fr">
+                            		<h1 class="clearfix">
+                                            <p class="fl">最热包包好店</p>
+                                            <a href="#" class="fr">更多好店&gt;</a>
+                                    </h1>
+                                    <div>
+                                    		<img src="img/8_40.jpg" />
+                                    		<a href="#">金金韩国美包馆</a>
+                                            <p>798件商品/总销量101918</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_42.jpg" />
+                                    		<a href="#">HOW.R.U优哈优哈官方旗舰店</a>
+                                            <p>94件商品/总销量8534</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_44.jpg" />
+                                    		<a href="#">索女箱包旗舰店</a>
+                                            <p>315件商品/总销量113891</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_46.jpg" />
+                                    		<a href="#">闺蜜淘货</a>
+                                            <p>49件商品/总销量32609</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_48.jpg" />
+                                    		<a href="#">乐乐潮流包铺</a>
+                                            <p>237件商品/总销量14775</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_50.jpg" />
+                                    		<a href="#">萝拉原创</a>
+                                            <p>111件商品/总销量20774</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_52.jpg" />
+                                    		<a href="#">小象包袋旗舰店</a>
+                                            <p>68件商品/总销量13726</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_54.jpg" />
+                                    		<a href="#">优尚良品</a>
+                                            <p>201件商品/总销量52221</p>
+                                    </div>
+                                     <div class="ban-four-right-last">
+                                    		<img src="img/8_56.jpg" />
+                                    		<a href="#">森林小屋</a>
+                                            <p>141件商品/总销量271217</p>
+                                    </div>
+                            </div>
+                     </div>
+                     <div class="ban-tit-6 clearfix">
+                             <h1 class="fl">
+                                     <span class="ico-2 fl">配饰</span>
+                                     <span class="fl ico-3" >今日上新<strong>2039</strong>件</span>
+                            </h1>
+                            <a href="#" class="fr">查看所有配饰&gt;</a>
+                     </div>
+                     <div  class="ban-four clearfix">
+                     		<div class="ban-four-1 fl">
+                                    <ul class="ban-four-l clearfix">
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/32391cd6921d19e56fce0bab16bf_450_675.cf.jpg_b4e02733_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">显瘦连裤袜</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/a9151181e514bc8f5d6ff949ab0f_640_832.cc.jpg_91918575_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">温暖围巾</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/ad787e6dcec6f34d098a98bf0360_640_960.cg.jpg_f2af1ba2_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">新款帽子</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/a10eb14fe85e3e6440e592938c63_640_960.cc.jpg_27552d71_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">可爱手机壳</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl pic-5">
+                                                    <a href="#">
+                                                         <img src="img/8a1ec75f3fcb9d3fa8b92dc9c22f_640_960.cc.jpg_6ac6c122_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">精美手表</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/5c296c112b55410ab1163969f238_640_900.c8.jpg_27870047_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">个性耳钉</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img  src="img/302bd8733a24db7a431e13424a71_450_600.cc.jpg_204a1e4e_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">点睛项链</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/764b419a0edb64864088a2aac47c_640_832.cc.jpg_731ea054_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">保暖袜子</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl">
+                                                    <a href="#">
+                                                         <img src="img/b91ee0320dbd23f738898e0cc044_640_832.cc.jpg_47b3a67f_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">买手精选</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                            <li class="fl pic-5">
+                                                    <a href="#">
+                                                         <img src="img/56b35f50c4b03cf5bbf629dc7b4a_640_900.ch.jpg_479f10f7_s2_180_255.jpg" />
+                                                            <h2 class="opabox">
+                                                                    <img src="img/bar_bg.png"  class="opa"/>
+                                                                    <p class="content">韩式发箍</p>
+                                                            </h2>
+                                                   </a>
+                                            </li>
+                                    </ul>
+                                    <div class="ban-four-bottom clearfix">
+                                            <div class="clearfix fl">
+                                                    <p class="fl"><a href="#">早春</a></p>
+                                                    <h1 class="fl">
+                                                            <a href="#">脚链</a>
+                                                           <a href="#">胸针</a>
+                                                           <a href="#">头花</a>
+                                                            <a href="#">胸花</a>
+                                                            <a href="#">发带</a>
+                                                            <a href="#">丝巾</a>
+                                                            <a href="#">袜子</a>
+                                                            <a href="#">连裤袜</a>
+                                                            <a href="#">丝袜</a>
+                                                            <a href="#">帽子</a>
+                                                    </h1>
+                                              </div>
+                                              <div class="clearfix fl">
+                                                    <p class="fl"><a href="#">首饰</a></p>
+                                                    <h1 class="fl">
+                                                            <a href="#">项链</a>
+                                                           <a href="#">手镯</a>
+                                                           <a href="#">手链</a>
+                                                            <a href="#">戒指</a>
+                                                            <a href="#">耳环</a>
+                                                            <a href="#">锁骨链</a><br />
+                                                            <a href="#">复古项链</a>
+                                                            <a href="#">毛衣链</a>
+                                                            <a href="#">对戒</a>
+                                                    </h1>
+                                              </div>
+                                              <div class="clearfix fl">
+                                                    <p class="fl"><a href="#">装扮</a></p>
+                                                    <h1 class="fl">
+                                                            <a href="#">腰带</a>
+                                                           <a href="#">围巾</a>
+                                                           <a href="#">手表</a>
+                                                            <a href="#">发饰</a>
+                                                            <a href="#">眼镜框</a>
+                                                            <a href="#">墨镜</a><br />
+                                                            <a href="#">假领子</a>
+                                                    </h1>
+                                              </div>
+                                    </div>
+                            </div>
+                            <div class="ban-four-right fr">
+                            		<h1 class="clearfix">
+                                            <p class="fl">最热配饰好店</p>
+                                            <a href="#" class="fr">更多好店&gt;</a>
+                                    </h1>
+                                    <div>
+                                    		<img src="img/8_58.jpg" />
+                                    		<a href="#">风吹麦浪</a>
+                                            <p>434件商品/总销量228377</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_60.jpg" />
+                                    		<a href="#">倾城之恋</a>
+                                            <p>345件商品/总销量171085</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_62.jpg" />
+                                    		<a href="#">梦境小屋</a>
+                                            <p>360件商品/总销量44146</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_64.jpg" />
+                                    		<a href="#">果然Home</a>
+                                            <p>99件商品/总销量34403</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_66.jpg" />
+                                    		<a href="#">Smile。Watch</a>
+                                            <p>307件商品/总销量116193</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_68.jpg" />
+                                    		<a href="#">爱莎小铺</a>
+                                            <p>398件商品/总销量27804</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_70.jpg" />
+                                    		<a href="#">DaisyRose旗舰店</a>
+                                            <p>108件商品/总销量8619</p>
+                                    </div>
+                                     <div>
+                                    		<img src="img/8_72.jpg" />
+                                    		<a href="#">米米家</a>
+                                            <p>449件商品/总销量134065</p>
+                                    </div>
+                                     <div class="ban-four-right-last">
+                                    		<img src="img/8_74.jpg" />
+                                    		<a href="#">心饰心妤</a>
+                                            <p>351件商品/总销量65550</p>
+                                    </div>
+                            </div>
+                     </div>
+                     <div class="ban-tit-7 clearfix">
+                             <h1 class="fl">
+                                     <span class="ico-2 fl">配饰</span>
+                            </h1>
+                            <div  class="fr ico-4">
+                            		<a href="#">欧美</a>
+                                    <a href="#">甜美</a>
+                                    <a href="#">复古</a>
+                                    <a href="#">个性</a>
+                                    <a href="#">日系</a>
+                                    <a href="#">其他</a>
+                                    <a href="#" class="ico-last">更多杂志&gt;</a>
+                            </div> 
+                     </div>
+                     <div class="ban-last clearfix">
+                     		<div class="last-1 fl">
+                            		<a href="#">小女人有恋物癖</a>
+                                    <img src="img/eee2323884768bd34eab636cfe24.c6.jpg" />
+                                    <div class="last-bottom clearfix">
+                                    		<p class="fl">886个分享</p>
+                                            <input type="button"  value="去看看" class="fr"/>
+                                    </div>
+                            </div>
+                            <div class="last-1 fl">
+                            		<a href="#">怪诞文艺腔</a>
+                                    <img src="img/67484b551f362023f68030aa52f7.cf.jpg" />
+                                    <div class="last-bottom clearfix">
+                                    		<p class="fl">2413个分享</p>
+                                            <input type="button"  value="去看看" class="fr"/>
+                                    </div>
+                            </div>
+                            <div class="last-1 fl">
+                            		<a href="#">每个人有它的脾气</a>
+                                    <img src="img/1be246650a2fc47ad295dcb43477.cc.jpg" />
+                                    <div class="last-bottom clearfix">
+                                    		<p class="fl">234个分享</p>
+                                            <input type="button"  value="去看看" class="fr"/>
+                                    </div>
+                            </div>
+                            <div class="last-1 fl">
+                            		<a href="#">carft</a>
+                                    <img src="img/b2600b15bf399503fd22b04506b1.ch.jpg" />
+                                    <div class="last-bottom clearfix">
+                                    		<p class="fl">1521个分享</p>
+                                            <input type="button"  value="去看看" class="fr"/>
+                                    </div>
+                            </div>
+                            <div class="last-1 fl last-5">
+                            		<a href="#">=小宅</a>
+                                    <img src="img/45a17d8f352a772efe5a0708c94e.cg.jpg" />
+                                    <div class="last-bottom clearfix">
+                                    		<p class="fl">688个分享</p>
+                                            <input type="button"  value="去看看" class="fr"/>
+                                    </div>
+                            </div>
+                     </div>
+            </div> 
+           <!--banner end-->
+         </div>
+         <!--main end-->
+           <div class="footer">
+           		<div class="footer-mac clearfix">
+                <div class="footer-top">
+                            <div class="footer-1 claearfix fl">
+                                    <span class="fl"></span>
+                                    <div class="footer-1-2 fl"> 
+                                            <h3>4000-800-577</h3>
+                                            <p>美丽说客服热线</p>
+                                            <p>周一至周日：08：00-22：00</p>
+                                    </div>
+                            </div>
+                             <dl class="footer-2 fl">
+                                            <dt>用户帮助</dt>
+                                            <dd><a href="#">新手指南</a></dd>
+                                            <dd><a href="#">网站地图</a></dd>
+                                            <dd><a href="#">意见反馈</a></dd>
+                             </dl>
+                             <dl class="footer-2 fl">
+                                            <dt>关于我们</dt>
+                                            <dd><a href="#">关于美丽说</a></dd>
+                                            <dd><a href="#">练习我们</a></dd>
+                                            <dd><a href="#">加入美丽说</a></dd>
+                                            <dd><a href="#">商家入驻</a></dd>
+                                            <dd><a href="#">商家推广</a></dd>
+                             </dl>
+                             <dl class="footer-2 fl">
+                                            <dt>关注我们</dt>
+                                            <dd><a href="#">新浪微博</a></dd>
+                                            <dd><a href="#">QQ空间</a></dd>
+                                            <dd><a href="#">腾讯微博</a></dd>
+                             </dl>
+                             <dl class="footer-3 fl">
+                                            <dt>美丽说微信服务号</dt>
+                                            <img src="img/erweima1.jpg" />
+                             </dl>
+                              <dl class="footer-4 fr">
+                                            <dt>美丽说客户端下载</dt>
+                                            <a href="#"></a>
+                             </dl> 
+                     </div>
+                   <div class="footer-center clearfix">
+           				<div class="footer-cen-l clearfix fl">
+                    		<p class="fl">友情链接：</p>
+                            <div class="fl">
+                            		<a href="#">腾讯女性</a>
+                                    <a href="#">列表网</a>
+                                    <a href="#">太平洋女性网</a>
+                                    <a href="#">多宝汇</a>
+                                    <a href="#">七丽女性网</a>
+                                    <a href="#">酷我音乐</a>
+                                    <a href="#">LADYMAX时尚网</a>
+                                    <a href="#">空姐网</a>
+                                    <a href="#">中国品牌服装网</a>
+                                    <a href="#">	优美网</a>
+                                    <a href="#">男士时尚</a>
+                                    <a href="#">哈秀时尚网</a>
+                            </div>
+          		 </div>
+                 <a href="#" class="footer-cen-r fr">更多&gt;&gt;</a>
+         </div>
+         		<div class="footer-bottom">
+                		<p>Copyright ©2014 Meilishuo.com  电信与信息服务业务经营许可证100798号  企业法人营业执照  京ICP备11031139号  京公网安备110108006045<br />客服邮箱：kf@meilishuo.com  客服电话：4000-800-577  文明办网文明上网举报电话：010-82615762  违法不良信息举报中心 我最喜爱的人民警察评选>></p>
+                        
+                </div>	
+              </div>
+           </div>
+           
+          <a href="#" class="fix">返回<br />顶部</a>
+<body>
+		
+</body>
+</html>
